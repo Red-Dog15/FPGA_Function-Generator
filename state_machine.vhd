@@ -1,6 +1,8 @@
 
 --	 State machine entity File --
 
+
+
 -- State machine
 
 library ieee;
@@ -17,10 +19,10 @@ entity state_machine is
 
 end entity;
 
-architecture rtl of four_state_moore_state_machine is
+architecture rtl of state_machine is
 
 	-- Build an enumerated type for the state machine
-	type state_type is (s0, s1, s2, s3);
+	type state_type is (s0, s1);
 
 	-- Register to hold the current state
 	signal state   : state_type;
@@ -41,8 +43,8 @@ begin
 						state <= s0;
 					end if;
 				when s1=>
-					if input = '1' then
-						state <= s2;
+					if input = '0' then
+						state <= s0;
 					else
 						state <= s1;
 					end if;
