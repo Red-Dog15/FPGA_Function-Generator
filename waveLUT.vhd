@@ -19,13 +19,34 @@ begin
 	process(clk)
 	
 		variable i : INTEGER range 0 to 7 := 0;
-		variable vount: INTEGER range 0 to 2 := 0;
+		variable count: INTEGER range 0 to 2 := 0;
 			
 		type state_type is (UPDATE_VALUE, HOLD);
 		signal current_state	:	state_tyoe	:=	UPDATE_VALUE;
+		
 	begin 
 		
 		if rising_edge(clk)	then
 			case	current_state	is
 				when	UPDATE_VALUE => 
+					wave_out <=	wave(i);
+					if i = 7 then
+						i:= 0;
+					else
+						i :=	i + 1 -- iterate index
+					end if;
+					count := 0;
+					current_state	<=	HOLD;
 					
+				when	HOLD	=>
+					if count =	2 then
+						current_state <= UPDATE_VALUE
+						
+					else
+						count := count + 1; -- iterate count
+						current_state <= HOLD;
+					end if;
+			end case;
+		end if;	
+	end process;
+end Behavioral;	
