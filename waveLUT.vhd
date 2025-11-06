@@ -14,6 +14,9 @@ architecture Behavioral of waveLUT is
 	type wave_array is array (0 to 7) of INTEGER;
 	constant wave	:	wave_array	:=	(0,1,2,1,0,-1,-2,-1);
 	
+	type state_type is (UPDATE_VALUE, HOLD);
+	signal current_state	:	state_type	:=	UPDATE_VALUE;
+		
 begin
 
 	process(clk)
@@ -21,8 +24,6 @@ begin
 		variable i : INTEGER range 0 to 7 := 0;
 		variable count: INTEGER range 0 to 2 := 0;
 			
-		type state_type is (UPDATE_VALUE, HOLD);
-		signal current_state	:	state_tyoe	:=	UPDATE_VALUE;
 		
 	begin 
 		
@@ -33,14 +34,14 @@ begin
 					if i = 7 then
 						i:= 0;
 					else
-						i :=	i + 1 -- iterate index
+						i :=	i + 1; -- iterate index
 					end if;
 					count := 0;
 					current_state	<=	HOLD;
 					
 				when	HOLD	=>
 					if count =	2 then
-						current_state <= UPDATE_VALUE
+						current_state <= UPDATE_VALUE;
 						
 					else
 						count := count + 1; -- iterate count
