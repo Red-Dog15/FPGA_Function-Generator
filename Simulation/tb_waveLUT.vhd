@@ -7,14 +7,13 @@ use IEEE.NUMERIC_STD.ALL;
 entity waveLUT_tb is
 end waveLUT_tb;
 
-architecture Behavoiral of waveLUT_tb is
+architecture Behavioral of waveLUT_tb is
 	signal clk	:	STD_LOGIC	:=	'0';
 	signal wave_out	:	INTEGER;
 	
-	componenet waveLUT 
-	Port (clk: in STD_LOGIC; wave_out	: 	out	INTEGER);
-	end componenet;
-	
+	component waveLUT
+		Port (clk: in STD_LOGIC; wave_out	: 	out	INTEGER);
+	end component;	
 begin
 	--Instantiate DUT
 	dut:	waveLUT	port map (clk => clk,	wave_out => wave_out);
@@ -25,9 +24,9 @@ begin
 		for i in 0 to 49 loop -- 50 clock cycles
 			clk <= '0';
 			wait for 10 ns;
-			clk <= '1'; wait for 10 ns
+			clk <= '1'; wait for 10 ns;
 		end loop;
 		wait;
 	end process;
 	
-end Behavoiral
+end Behavioral;

@@ -1,0 +1,41 @@
+{G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/waveLUT.vhd} {1 {vcom -work work -2002 -explicit -stats=none {G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/waveLUT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity waveLUT
+-- Compiling architecture Behavioral of waveLUT
+
+} {} {}} {G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/DE1_SOC_golden_top.v} {1 {vlog -work work -stats=none {G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/DE1_SOC_golden_top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DE1_SOC_golden_top
+
+Top level modules:
+	DE1_SOC_golden_top
+
+} {} {}} {G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/state_machine.vhd} {1 {vcom -work work -2002 -explicit -stats=none {G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/state_machine.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity state_machine
+-- Compiling architecture rtl of state_machine
+
+} {} {}} {G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd} {0 {vcom -work work -2002 -explicit -stats=none {G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity waveLUT_tb
+-- Compiling architecture Behavioral of waveLUT_tb
+** Error: G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd(16): near "componenet": (vcom-1576) expecting COMPONENT.
+** Error: G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd(19): (vcom-1484) Unknown formal identifier "clk".
+** Error: G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd(19): (vcom-1484) Unknown formal identifier "wave_out".
+** Error: G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd(25): Cannot drive signal 'clk' of mode IN.
+** Error: G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd(27): Cannot drive signal 'clk' of mode IN.
+** Error: G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd(28): near "end": (vcom-1576) expecting ';'.
+** Error: G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd(30): near "process": (vcom-1576) expecting LOOP.
+
+} {9.0 16.0} {}}
