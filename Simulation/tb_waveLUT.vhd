@@ -9,10 +9,10 @@ end waveLUT_tb;
 
 architecture Behavioral of waveLUT_tb is
 	signal clk	:	STD_LOGIC	:=	'0';
-	signal wave_out	:	INTEGER;
+	signal wave_out	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
 	
 	component waveLUT
-		Port (clk: in STD_LOGIC; wave_out	: 	out	INTEGER);
+		Port (clk: in STD_LOGIC; wave_out	: 	out	STD_LOGIC_VECTOR);
 	end component;	
 begin
 	--Instantiate DUT
@@ -21,7 +21,7 @@ begin
 	--clock generation
 	clk_process : process
 	begin
-		for i in 0 to 49 loop -- 50 clock cycles
+		for i in 0 to 200 loop -- 50 clock cycles
 			clk <= '0';
 			wait for 10 ns;
 			clk <= '1'; wait for 10 ns;

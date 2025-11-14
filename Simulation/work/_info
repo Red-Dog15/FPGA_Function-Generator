@@ -11,23 +11,23 @@ z2
 cModel Technology
 dC:/Program Files/IntelQuartusV20
 vDE1_SOC_golden_top
-!s110 1762518117
+Z0 !s110 1763123791
 !i10b 1
 !s100 D9__d<Di8^Lf7UjW6]Da00
 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I2J5EhOoNKQ10k45J9Y5kG0
 VDg1SIo80bB@j0V0VzS_@n1
-Z0 dG:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation
+Z1 dG:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation
 w1497054783
 8G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/DE1_SOC_golden_top.v
 FG:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/DE1_SOC_golden_top.v
-!i122 61
+!i122 135
 L0 54 212
 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z1 !s108 1762518116.000000
+Z2 !s108 1763123791.000000
 !s107 G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/DE1_SOC_golden_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/DE1_SOC_golden_top.v|
 !i113 1
@@ -35,39 +35,39 @@ o-work work
 tCvgOpt 0
 n@d@e1_@s@o@c_golden_top
 Estate_machine
-Z2 w1762437967
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 59
-R0
-Z5 8G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/state_machine.vhd
-Z6 FG:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/state_machine.vhd
+Z3 w1762437967
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 133
+R1
+Z6 8G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/state_machine.vhd
+Z7 FG:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/state_machine.vhd
 l0
 L11 1
 VEN?8:f^j9odkO@cK4E_6:1
 !s100 @V]:jz09]_B2@n`KOVRG00
-Z7 OV;C;2020.1;71
+Z8 OV;C;2020.1;71
 32
-Z8 !s110 1762518116
+R0
 !i10b 1
-Z9 !s108 1762518115.000000
+Z9 !s108 1763123790.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/state_machine.vhd|
 Z11 !s107 G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/state_machine.vhd|
 !i113 1
 Z12 o-work work -2002 -explicit
 Z13 tExplicit 1 CvgOpt 0
 Artl
-R3
 R4
+R5
 DEx4 work 13 state_machine 0 22 EN?8:f^j9odkO@cK4E_6:1
-!i122 59
+!i122 133
 l30
 L22 45
 VEYOl_mM@@ZzWQ6e9S`AgM3
 !s100 [FKQY];83nLPU2bbG]JYN0
-R7
-32
 R8
+32
+R0
 !i10b 1
 R9
 R10
@@ -76,23 +76,23 @@ R11
 R12
 R13
 Ewavelut
-Z14 w1762444464
+Z14 w1763123540
 Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-R3
 R4
-!i122 60
-R0
+R5
+!i122 134
+R1
 Z16 8G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/waveLUT.vhd
 Z17 FG:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/waveLUT.vhd
 l0
 L5 1
-V6D7>WokTD^L^9ldQhHCGg3
-!s100 3?<T5hCC2D[2AEoNz9I:92
-R7
-32
+V7l6=G4]ZVA@GXSnn5:fad0
+!s100 1]SmBAE?<hQcX[[TfmKW@3
 R8
+32
+R0
 !i10b 1
-R1
+R2
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/waveLUT.vhd|
 Z19 !s107 G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/waveLUT.vhd|
 !i113 1
@@ -100,64 +100,64 @@ R12
 R13
 Abehavioral
 R15
-R3
 R4
-DEx4 work 7 wavelut 0 22 6D7>WokTD^L^9ldQhHCGg3
-!i122 60
-l20
-L12 42
-VDSVJjEN>z1z9gb46L7kE10
-!s100 FbE=7MYdD@BD:ooMl?8GO3
-R7
-32
+R5
+DEx4 work 7 wavelut 0 22 7l6=G4]ZVA@GXSnn5:fad0
+!i122 134
+l30
+L12 52
+VVQ?L674KjLFcd9CjPEXm31
+!s100 =I7k^O0YS@QS:9f1jh;WO2
 R8
+32
+R0
 !i10b 1
-R1
+R2
 R18
 R19
 !i113 1
 R12
 R13
 Ewavelut_tb
-Z20 w1762517964
+Z20 w1763123542
 R15
-R3
 R4
-!i122 63
-R0
+R5
+!i122 132
+R1
 Z21 8G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd
 Z22 FG:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd
 l0
 L7 1
 Vb5`eITV1lb2F9BFKi3;JB1
 !s100 kgc[TNalmAfkIJ_AlcHFj0
-R7
+R8
 32
-Z23 !s110 1762518505
+Z23 !s110 1763123790
 !i10b 1
-Z24 !s108 1762518505.000000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd|
-Z26 !s107 G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd|
+R9
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd|
+Z25 !s107 G:/Documents/3rd year/hardware/vhdl_projects/Function_Generator/Simulation/tb_waveLUT.vhd|
 !i113 1
 R12
 R13
 Abehavioral
 R15
-R3
 R4
-Z27 DEx4 work 10 wavelut_tb 0 22 b5`eITV1lb2F9BFKi3;JB1
-!i122 63
+R5
+DEx4 work 10 wavelut_tb 0 22 b5`eITV1lb2F9BFKi3;JB1
+!i122 132
 l17
-Z28 L10 23
-Z29 VbR8gWM_fEho1?eF>_6m4E0
-Z30 !s100 b:zFg1gVDa]lDh6iFUL@21
-R7
+L10 23
+VFViEEPbgUHe1ehnGBBQ:90
+!s100 YMj1iA<UlIh?Y6TR0CDQV1
+R8
 32
 R23
 !i10b 1
+R9
 R24
 R25
-R26
 !i113 1
 R12
 R13
