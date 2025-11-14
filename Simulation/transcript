@@ -1,11 +1,13 @@
+# Compile of tb_Function_Generator.vhd failed with 1 errors.
 # Compile of tb_waveLUT.vhd was successful.
-# Compile of state_machine.vhd was successful.
-# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
 # Compile of DE1_SOC_golden_top.v was successful.
-# 4 compiles, 0 failed with no errors.
+# Compile of waveLUT.vhd was successful.
+# 5 compiles, 2 failed with 2 errors.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
 vsim -gui work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
 # vsim -gui work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
-# Start time: 12:34:41 on Nov 14,2025
+# Start time: 19:04:46 on Nov 14,2025
 # Loading work.DE1_SOC_golden_top
 # Loading std.standard
 # Loading std.textio(body)
@@ -13,117 +15,13 @@ vsim -gui work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
 # Loading ieee.numeric_std(body)
 # Loading work.wavelut(behavioral)
 # Loading work.wavelut_tb(behavioral)
-# Load canceled
-run
-add wave -position end  sim:/wavelut_tb/clk
+add wave -position end  sim:/wavelut_tb/wave_out
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
-#           Attempting to use alternate WLF file "./wlftcj19dx".
+#           Attempting to use alternate WLF file "./wlftc5yyx4".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftcj19dx
+#           Using alternate file: ./wlftc5yyx4
 add wave -position end  sim:/wavelut_tb/clk
-add wave -position end  sim:/wavelut_tb/wave_out
 run
-run
-run
-# Compile of tb_waveLUT.vhd was successful.
-# Compile of state_machine.vhd was successful.
-# Compile of waveLUT.vhd was successful.
-# Compile of DE1_SOC_golden_top.v was successful.
-# 4 compiles, 0 failed with no errors.
-# Break key hit
 run -all
-run
-# Break key hit
-run
-quit -sim
-# End time: 12:37:52 on Nov 14,2025, Elapsed time: 0:03:11
-# Errors: 0, Warnings: 5
-vsim work.wavelut
-# vsim work.wavelut 
-# Start time: 12:37:59 on Nov 14,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.wavelut(behavioral)
-vsim work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
-# End time: 12:38:19 on Nov 14,2025, Elapsed time: 0:00:20
-# Errors: 0, Warnings: 1
-# vsim work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
-# Start time: 12:38:19 on Nov 14,2025
-# Loading work.DE1_SOC_golden_top
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.wavelut(behavioral)
-# Loading work.wavelut_tb(behavioral)
-run -all
-add wave -position end  sim:/wavelut_tb/wave_out
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
-#           Attempting to use alternate WLF file "./wlfttmjwbq".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttmjwbq
 add wave -position end  sim:/wavelut_tb/clk
-run
-vsim work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
-# End time: 12:39:34 on Nov 14,2025, Elapsed time: 0:01:15
-# Errors: 0, Warnings: 3
-# vsim work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
-# Start time: 12:39:34 on Nov 14,2025
-# Loading work.DE1_SOC_golden_top
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.wavelut(behavioral)
-# Loading work.wavelut_tb(behavioral)
-add wave -position end  sim:/wavelut_tb/clk
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
-#           Attempting to use alternate WLF file "./wlftt2mdit".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftt2mdit
-add wave -position end  sim:/wavelut_tb/wave_out
-run
-run
-run
-quit -sim
-# End time: 12:43:00 on Nov 14,2025, Elapsed time: 0:03:26
-# Errors: 0, Warnings: 3
-vsim work.wavelut_tb
-# vsim work.wavelut_tb 
-# Start time: 12:43:00 on Nov 14,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.wavelut_tb(behavioral)
-# Loading work.wavelut(behavioral)
-vsim work.wavelut_tb
-# End time: 12:43:05 on Nov 14,2025, Elapsed time: 0:00:05
-# Errors: 0, Warnings: 1
-# vsim work.wavelut_tb 
-# Start time: 12:43:06 on Nov 14,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.wavelut_tb(behavioral)
-# Loading work.wavelut(behavioral)
-vsim work.wavelut_tb
-# End time: 12:43:10 on Nov 14,2025, Elapsed time: 0:00:04
-# Errors: 0, Warnings: 1
-# vsim work.wavelut_tb 
-# Start time: 12:43:10 on Nov 14,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.wavelut_tb(behavioral)
-# Loading work.wavelut(behavioral)
-quit -sim
-# End time: 12:43:31 on Nov 14,2025, Elapsed time: 0:00:21
-# Errors: 0, Warnings: 1

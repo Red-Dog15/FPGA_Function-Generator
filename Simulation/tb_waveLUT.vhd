@@ -21,7 +21,7 @@ begin
 	--clock generation
 	clk_process : process
 	begin
-		for i in 0 to 200 loop -- 50 clock cycles
+		for i in 0 to 200 loop -- 200 clock cycles
 			clk <= '0';
 			wait for 10 ns;
 			clk <= '1'; wait for 10 ns;

@@ -7,3 +7,9 @@ output_files/
 *.log
 *.flock
 
+# ModelSim/Questa project files
+*.mpf
+*.mpp
+modelsim.ini
+transcript
+work/
