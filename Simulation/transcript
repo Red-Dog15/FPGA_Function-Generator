@@ -25,3 +25,5 @@ add wave -position end  sim:/wavelut_tb/clk
 run
 run -all
 add wave -position end  sim:/wavelut_tb/clk
+# End time: 23:05:15 on Nov 14,2025, Elapsed time: 4:00:29
+# Errors: 0, Warnings: 9
