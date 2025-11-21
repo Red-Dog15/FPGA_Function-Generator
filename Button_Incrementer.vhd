@@ -11,13 +11,13 @@ entity Button_Incrementer is
 	generic (
 		CLK_FREQ_HZ : integer := 50000000; -- system clock frequency (Hz)
 		DEBOUNCE_MS : integer := 20;       -- debounce time (ms)
-		count  : natural := 2         -- amount to add on each press (increases/decreases duty_cycle)
+		count  : integer := 2         -- amount to add on each press (increases/decreases duty_cycle)
+		constant btn_val	:	integer; -- increments button depending on button val given
 	);
 	port (
 		clk       : in  std_logic;                          -- system clock
 		reset   : in  std_logic := '1';                   -- reset button
 		btn_in    : in  std_logic;                          -- push button input (prefer active-high)
-		value_out : out std_logic_vector(7 downto 0)        -- 8-bit counter output
 	);
 
 end Button_Incrementer;
@@ -25,7 +25,7 @@ end Button_Incrementer;
 architecture Behavioral of Button_Incrementer is
 
 	-- debounce tick count computed from generics
-	constant db_time  := integer := integer((CLK_FREQ_HZ / 1000) * DEBOUNCE_MS);
+	constant db_time : natural := (CLK_FREQ_HZ / 1000) * DEBOUNCE_MS;
 
 	-- synchronizer and debounce state
 	signal sync0     : std_logic := '0';
@@ -33,7 +33,6 @@ architecture Behavioral of Button_Incrementer is
 	signal stable    : std_logic := '0';
 	signal prev_stab : std_logic := '0';
 	signal db_cnt    : integer := 0;
-
 	-- internal value
 	signal val       : unsigned(7 downto 0) := (others => '0');
 
@@ -48,7 +47,6 @@ begin
 			stable    <= '0';
 			prev_stab <= '0';
 			db_cnt    <= 0; -- counter for debouncer
-			val       <= (others => '0');
 
 		elsif rising_edge(clk) then
 			-- two-stage synchronizer to avoid metastability
@@ -69,14 +67,42 @@ begin
 
 			-- checks for duplicate stable signals to avoid Duty Cycle overcorrecting
 			if stable = '1' and prev_stab = '0' then
-				val <= val + to_unsigned(STEP mod 256, 8);
+				count <= count + button_val;
 			end if;
 
 			prev_stab <= stable;
 		end if;
 	end process;
 
-	-- output assignment
-	value_out <= std_logic_vector(val);
-
 end Behavioral;
+
+--component declaration:
+--
+--	generic (
+--		CLK_FREQ_HZ : integer := 50000000; -- system clock frequency (Hz)
+--		DEBOUNCE_MS : integer := 20;       -- debounce time (ms)
+--		count  : integer := 2         -- amount to add on each press (increases/decreases duty_cycle)
+--	);
+--	port (
+--		clk       : in  std_logic;                          -- system clock
+--		reset   : in  std_logic := '1';                   -- reset button
+--		btn_in    : in  std_logic;                          -- push button input (prefer active-high)
+--	);
+
+
+-- end component;
+
+-- instantiation in a VHDL top-level:
+--
+-- Button_Incrementer_inst : Button_Incrementer
+--     generic map (
+--         CLK_FREQ_HZ => 50000000,
+--         DEBOUNCE_MS => 20,
+--         STEP        => 8
+--     );
+--     port map (
+--         clk       => CLOCK_50,
+--         reset   => KEY[0],   -- or tie '1' if not used
+--         btn_in    => KEY[1],
+--         value_out => manual_duty_bus
+--     );

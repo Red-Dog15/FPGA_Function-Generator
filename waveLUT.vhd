@@ -5,6 +5,7 @@ Use IEEE.NUMERIC_STD.ALL;
 entity waveLUT is
 	port(
 		clk 	:	in	STD_LOGIC;
+		hold_count  :  in  STD_LOGIC_VECTOR(7 downto 0) := "00000010"; -- button-controlled hold count (default 2)
 		wave_out	:	out	STD_LOGIC_VECTOR(7 downto 0)
 	);
 end waveLUT;
@@ -32,11 +33,10 @@ begin
 	process(clk)
 	
 		variable i : INTEGER range 0 to 31 := 0;
-		variable count: INTEGER range 0 to 2 := 0;
+		variable count: integer range 0 to 2 := 0;
 			
 		
 	begin 
-		
 		if rising_edge(clk)	then
 			case	current_state	is
 				when	UPDATE_VALUE => 
@@ -50,8 +50,9 @@ begin
 					current_state	<=	HOLD;
 					
 				when	HOLD	=>
-					if count =	2 then
+					if count >=	max_count then
 						current_state <= UPDATE_VALUE;
+						count := max_count -- set count back to hold value
 						
 					else
 						count := count + 1; -- iterate count
