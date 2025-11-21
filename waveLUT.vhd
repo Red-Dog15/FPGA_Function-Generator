@@ -3,13 +3,20 @@ use IEEE.STD_Logic_1164.ALL;
 Use IEEE.NUMERIC_STD.ALL; 
 
 entity waveLUT is
+
 	port(
 		clk 	:	in	STD_LOGIC;
-		hold_count  :  in  STD_LOGIC_VECTOR(7 downto 0) := "00000010"; -- button-controlled hold count (default 2)
-		wave_out	:	out	STD_LOGIC_VECTOR(7 downto 0)
+		wave_out	:	out	STD_LOGIC_VECTOR(7 downto 0);
+		
+		reset   :      in	STD_LOGIC;                     -- reset button
+		btn0_in    :     in	STD_LOGIC;                   -- push button input (prefer active-high)
+		btn1_in    :     in	STD_LOGIC                   -- push button input (prefer active-high)
 	);
+	
 end waveLUT;
 
+
+		
 architecture Behavioral of waveLUT is
 
 	-- create 32 element 8 bit logic array type
@@ -30,14 +37,43 @@ architecture Behavioral of waveLUT is
 		
 begin
 
-	process(clk)
 	
+-- instantiate 2 instance of button incrementer, button plut (positive incrementer) & button minus (negative incrementer)
+	
+	Btn_plus : entity work.Button_Incrementer -- buton plus instationation
+
+		Generic map (
+			max_count   =>    max_count,     -- (increases/decreases duty_cycle)
+			btn_val	 =>	  1    -- set count incrementation to 1
+	)
+		port map (
+			clk     =>      clk,                          -- system clock
+			reset    =>     reset,                     -- reset button
+			btn_in    =>     btn0_in                   -- push button input (prefer active-high), set to button 0
+	);
+--			
+	Btn_minus : entity work.Button_Incrementer -- buton minus instationation
+
+		Generic map (
+			max_count   =>    max_count,     -- (increases/decreases duty_cycle)
+			btn_val	 =>	-1    -- set count incrementation to -1
+	)
+		port map (
+			clk     =>      clk,                          -- system clock
+			reset    =>     reset,                     -- reset button
+			btn_in    =>     btn1_in                   -- set to button 1
+	);
+
+			
+		
+		
+	process(clk)
+		signal max_count : INTEGER range -100 to 100 := 2;
 		variable i : INTEGER range 0 to 31 := 0;
 		variable count: integer range 0 to 2 := 0;
 			
 		
 	begin 
-		
 		if rising_edge(clk)	then
 			case	current_state	is
 				when	UPDATE_VALUE => 
@@ -51,8 +87,9 @@ begin
 					current_state	<=	HOLD;
 					
 				when	HOLD	=>
-					if count =	2 then
+					if count >=	max_count then
 						current_state <= UPDATE_VALUE;
+						count := max_count; -- set count back to hold value
 						
 					else
 						count := count + 1; -- iterate count
