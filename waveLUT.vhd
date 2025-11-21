@@ -34,7 +34,11 @@ architecture Behavioral of waveLUT is
 	
 	type state_type is (UPDATE_VALUE, HOLD);
 	signal current_state	:	state_type	:=	UPDATE_VALUE;
-		
+	signal max_count : INTEGER range -100 to 100 := 2;
+	
+	signal plus_pulse    : std_logic; -- hold incrementer states
+   signal minus_pulse   : std_logic;
+	
 begin
 
 	
@@ -42,38 +46,36 @@ begin
 	
 	Btn_plus : entity work.Button_Incrementer -- buton plus instationation
 
-		Generic map (
-			max_count   =>    max_count,     -- (increases/decreases duty_cycle)
-			btn_val	 =>	  1    -- set count incrementation to 1
-	)
 		port map (
 			clk     =>      clk,                          -- system clock
 			reset    =>     reset,                     -- reset button
-			btn_in    =>     btn0_in                   -- push button input (prefer active-high), set to button 0
+			btn_in    =>     btn0_in,                   -- push button input (prefer active-high), set to button 0
+			output   =>   plus_pulse        -- incrementer state plus
+
 	);
 --			
 	Btn_minus : entity work.Button_Incrementer -- buton minus instationation
 
-		Generic map (
-			max_count   =>    max_count,     -- (increases/decreases duty_cycle)
-			btn_val	 =>	-1    -- set count incrementation to -1
-	)
 		port map (
 			clk     =>      clk,                          -- system clock
 			reset    =>     reset,                     -- reset button
-			btn_in    =>     btn1_in                   -- set to button 1
+			btn_in    =>     btn1_in,                   -- set to button 1
+			output   =>   minus_pulse         -- incrementer state minus
+
 	);
 
 			
 		
 		
 	process(clk)
-		signal max_count : INTEGER range -100 to 100 := 2;
 		variable i : INTEGER range 0 to 31 := 0;
 		variable count: integer range 0 to 2 := 0;
 			
 		
 	begin 
+		-- adjust for button presses
+		max_count <= max_count + Integer(plus_pulse) - Integer(minus_pulse);
+		
 		if rising_edge(clk)	then
 			case	current_state	is
 				when	UPDATE_VALUE => 

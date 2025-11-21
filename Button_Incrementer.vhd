@@ -11,15 +11,14 @@ entity Button_Incrementer is
 	generic ( 	-- values declared at instantiation 
 	
 		CLK_FREQ_HZ : integer := 50000000; -- system clock frequency (Hz)
-		DEBOUNCE_MS : integer := 20;       -- debounce time (ms)
-		max_count  : integer;         -- amount to add on each press (increases/decreases duty_cycle)e 
-		btn_val	:	integer -- increments button depending on button val given
+		DEBOUNCE_MS : integer := 20       -- debounce time (ms)
 	);
 
 	port (
 		clk       : in  std_logic;                          -- system clock
 		reset   : in  std_logic := '1';                   -- reset button
-		btn_in    : in  std_logic                          -- push button input (prefer active-high)
+		btn_in    : in  std_logic;                          -- push button input (prefer active-high)
+		output : out std_logic := '0'
 	);
 
 end Button_Incrementer;
@@ -67,7 +66,9 @@ begin
 
 			-- checks for duplicate stable signals to avoid Duty Cycle overcorrecting
 			if stable = '1' and prev_stab = '0' then
-				max_count <= max_count + button_val;
+				output <= '1';
+			else 
+				output <= '0'; 
 			end if;
 
 			prev_stab <= stable; -- set previous value to current stable value for future comparissons
