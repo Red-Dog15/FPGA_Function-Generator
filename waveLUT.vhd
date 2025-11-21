@@ -37,6 +37,7 @@ begin
 			
 		
 	begin 
+		
 		if rising_edge(clk)	then
 			case	current_state	is
 				when	UPDATE_VALUE => 
@@ -50,9 +51,8 @@ begin
 					current_state	<=	HOLD;
 					
 				when	HOLD	=>
-					if count >=	max_count then
+					if count =	2 then
 						current_state <= UPDATE_VALUE;
-						count := max_count -- set count back to hold value
 						
 					else
 						count := count + 1; -- iterate count

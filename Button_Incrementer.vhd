@@ -12,10 +12,8 @@ entity Button_Incrementer is
 		CLK_FREQ_HZ : integer := 50000000; -- system clock frequency (Hz)
 		DEBOUNCE_MS : integer := 20;       -- debounce time (ms)
 		count  : integer := 2         -- amount to add on each press (increases/decreases duty_cycle)
-		constant btn_val	:	integer; -- increments button depending on button val given
-	);
-	port (
-		clk       : in  std_logic;                          -- system clock
+		constant btn_val	:	integer; -- increments		btn_val	:	integer -- increments button depending on button val given
+                          -- system clock
 		reset   : in  std_logic := '1';                   -- reset button
 		btn_in    : in  std_logic;                          -- push button input (prefer active-high)
 	);
