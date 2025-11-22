@@ -70,7 +70,7 @@ begin
 
         -- 3) Push button 1 (decrement speed)	
 	
-			for i in 0 to 400 loop -- 200 clock cycles
+		for i in 0 to 200 loop -- 200 clock cycles
 			btn1_in <= '0';
 			clk <= '0';
 			wait for 10 ns;

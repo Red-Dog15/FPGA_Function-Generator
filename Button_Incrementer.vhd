@@ -12,7 +12,7 @@ entity Button_Incrementer is
 	
 		CLK_FREQ_HZ : integer := 50000000; -- system clock frequency (Hz)
 		DEBOUNCE_MS : integer := 20;       -- debounce time (ms)
-		btn_val	:	integer -- increments button depending on button val given
+		btn_val	:	integer := 0 -- increments button depending on button val given
 	);
 
 	port (
