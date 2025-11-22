@@ -123,3 +123,38 @@
 # Compile of waveLUT.vhd was successful.
 # Compile of Button_Incrementer.vhd was successful.
 # 4 compiles, 1 failed with 4 errors.
+# Compile of tb_waveLUT.vhd failed with 14 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 14 errors.
+# Compile of tb_waveLUT.vhd failed with 14 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 14 errors.
+# Compile of tb_waveLUT.vhd failed with 3 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of tb_waveLUT.vhd failed with 3 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of tb_waveLUT.vhd failed with 3 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.

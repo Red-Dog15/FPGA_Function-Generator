@@ -32,7 +32,7 @@ begin
 		reset => reset,	                    -- reset button
 		btn0_in => btn0_in,	                   -- push button input (prefer active-high)
 		btn1_in => btn1_in                    -- push button input (prefer active-high));
-	)
+	);
 	
         -- clock generation (20 ns period = 50 MHz)
 	clk_process : process
@@ -47,39 +47,37 @@ begin
         	wait for 50 ns;
 
 	-- 2) Let waveform run normally for a period
-
+		
 		for i in 0 to 200 loop -- 200 clock cycles
 			clk <= '0';
 			wait for 10 ns;
 			clk <= '1'; 
 			wait for 10 ns;
 		end loop;
-		
 
 
         -- 3) Push button 0 (increment speed)
 
 
 		for i in 0 to 400 loop -- 200 clock cycles
-		
-			if count < 100;
-				btn0_in <= 0;
-				count <= count + 1;
-				
-				clk <= '0';
-				wait for 10 ns;
-				clk <= '1'; 
-				wait for 10 ns;
-
-        -- 3) Push button 1 (decrement speed)		
-			else if count = 100 then
-				btn1_in <= 1;
-				clk <= '0';
-				wait for 10 ns;
-				clk <= '1'; 
-				wait for 10 ns;
-				
+			btn0_in <= '0';
+			clk <= '0';
+			wait for 10 ns;
+			clk <= '1'; 
+			wait for 10 ns;
 		end loop;
+		btn0_in <= '1';	
+
+        -- 3) Push button 1 (decrement speed)	
+	
+			for i in 0 to 400 loop -- 200 clock cycles
+			btn1_in <= '0';
+			clk <= '0';
+			wait for 10 ns;
+			clk <= '1'; 
+			wait for 10 ns;
+		end loop;
+		btn1_in <= '1';	
 	
 		wait;
 	end process;
