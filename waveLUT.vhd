@@ -47,7 +47,7 @@ begin
 	Btn_plus : entity work.Button_Incrementer -- buton plus instationation
 	
 		Generic map (
-				btn_val	 =>	  1    -- set count incrementation to 1
+				btn_val	 =>	  10    -- set count incrementation to 1
 		)
 		port map (
 			clk     =>      clk,                          -- system clock
@@ -60,7 +60,7 @@ begin
 	Btn_minus : entity work.Button_Incrementer -- buton minus instationation
 		
 		Generic map (
-				btn_val	 =>	  1    -- set count incrementation to 1
+				btn_val	 =>	  -10    -- set count incrementation to 1
 		)
 		port map (
 		
