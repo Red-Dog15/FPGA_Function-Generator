@@ -642,3 +642,143 @@ run
 # Compile of Button_Incrementer.vhd was successful.
 # 4 compiles, 0 failed with no errors.
 run
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+run -all
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+quit -sim
+# End time: 19:03:07 on Nov 22,2025, Elapsed time: 0:18:15
+# Errors: 0, Warnings: 13
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 19:06:58 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlftjiczq2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjiczq2
+run
+# Break key hit
+run
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run -all
+# ** Fatal: (vsim-3421) Value 3 is out of range 0 to 2.
+#    Time: 20003590 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 104
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 104
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 104 Process line__77
+# 
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 104 Process line__77
+# 
+quit -sim
+# End time: 19:16:39 on Nov 22,2025, Elapsed time: 0:09:41
+# Errors: 1, Warnings: 12
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 19:17:03 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlftv98knb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftv98knb
+run
+run

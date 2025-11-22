@@ -10,76 +10,71 @@ end waveLUT_tb;
 architecture Behavioral of waveLUT_tb is
 	signal clk	:	STD_LOGIC	:=	'0';
 	signal wave_out	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
-	signal reset    : STD_LOGIC := '0';
-    	signal btn0_in  : STD_LOGIC := '0';
-    	signal btn1_in  : STD_LOGIC := '0';
+	signal reset    : STD_LOGIC := '1';
+    	signal btn0_in  : STD_LOGIC := '1';
+    	signal btn1_in  : STD_LOGIC := '1';
 
-	component waveLUT
-		Port	(
-		clk: in STD_LOGIC; 
-		wave_out	: 	out	STD_LOGIC_VECTOR;
-		reset   :      in	STD_LOGIC;                     -- reset button
-		btn0_in    :     in	STD_LOGIC;                   -- push button input (prefer active-high)
-		btn1_in    :     in	STD_LOGIC                   -- push button input (prefer active-high));
-		);
-	end component;	
 begin
-	--Instantiate DUT
-	dut:	waveLUT	
-	port map (
-		clk => clk,	
-		wave_out => wave_out,	
-		reset => reset,	                    -- reset button
-		btn0_in => btn0_in,	                   -- push button input (prefer active-high)
-		btn1_in => btn1_in                    -- push button input (prefer active-high));
-	);
+    -- instantiate DUT
+    dut : entity work.waveLUT
+        port map (
+            clk      => clk,
+            wave_out => wave_out,
+            reset    => reset,
+            btn0_in  => btn0_in,
+            btn1_in  => btn1_in
+        );
+
 	
         -- clock generation (20 ns period = 50 MHz)
-	clk_process : process
-	begin
-	        wait for 500 ns;
+    -- CLOCK PROCESS  (runs forever)
 
-        -- 1) Apply Reset
-      
-	        reset <= '1';
-      		wait for 50 ns;
-        	reset <= '0';
-        	wait for 50 ns;
-
-	-- 2) Let waveform run normally for a period
-		
-		for i in 0 to 200 loop -- 200 clock cycles
-			clk <= '0';
-			wait for 10 ns;
-			clk <= '1'; 
-			wait for 10 ns;
-		end loop;
+    clk_process : process
+    begin
+        clk <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+    end process;
 
 
-        -- 3) Push button 0 (increment speed)
 
+    -- STIMULUS
 
-		for i in 0 to 400 loop -- 200 clock cycles
-			btn0_in <= '0';
-			clk <= '0';
-			wait for 10 ns;
-			clk <= '1'; 
-			wait for 10 ns;
-		end loop;
-		btn0_in <= '1';	
+    stim_proc : process
+    begin
+        
+        -- global reset pulse
+        reset <= '0';
+        wait for 100 ns;
+        reset <= '1';
+        wait for 200 ns;
+        
+        
 
-        -- 3) Push button 1 (decrement speed)	
-	
-		for i in 0 to 200 loop -- 200 clock cycles
-			btn1_in <= '0';
-			clk <= '0';
-			wait for 10 ns;
-			clk <= '1'; 
-			wait for 10 ns;
-		end loop;
-		btn1_in <= '1';	
-	
-		wait;
-	end process;
-	
+        -- let waveform run freely for a bit
+        wait for 3 us;
+        
+
+        -- press BTN0 once (increase speed)-
+        btn0_in <= '0';
+        wait for 500 ns;
+        btn0_in <= '1';
+        wait for 500 ns;
+	btn0_in <= '0';
+        wait for 500 ns;
+        btn0_in <= '1';
+
+        -- press BTN1 once (decrease speed)
+
+        btn1_in <= '0';
+        wait for 50 ns;
+        btn1_in <= '1';
+        wait for 50 ns;
+    	btn1_in <= '0';
+        wait for 50 ns;
+        btn1_in <= '1';        
+	wait;
+        
+    end process;
 end Behavioral;
