@@ -53,7 +53,7 @@ begin
 			sync0 <= btn_in;
 			sync1 <= sync0;
 
-			-- debouncer checks if value shave changed over duration of 20 ms (db_cnt)
+			-- debouncer checks if value saved changed over duration of 20 ms (db_cnt)
 			if sync1 /= stable then
 				if db_cnt < db_time then
 					db_cnt <= db_cnt + 1;

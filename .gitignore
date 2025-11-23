@@ -1,3 +1,4 @@
+# remove output files
 db/
 incremental_db/
 output_files/
@@ -8,8 +9,13 @@ output_files/
 *.flock
 
 # ModelSim/Questa project files
+simulation/
 *.mpf
 *.mpp
 modelsim.ini
 transcript
 work/
+*. 
+
+# backup files
+*.bak

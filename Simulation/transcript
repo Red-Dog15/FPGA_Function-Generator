@@ -854,3 +854,13 @@ add wave -position end  sim:/wavelut/max_count
 # Compile of Button_Incrementer.vhd was successful.
 # 4 compiles, 0 failed with no errors.
 run
+add wave -position insertpoint  \
+sim:/button_incrementer/db_time
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
