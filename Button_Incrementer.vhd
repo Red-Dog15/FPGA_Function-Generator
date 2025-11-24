@@ -8,24 +8,26 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Button_Incrementer is
 
-	generic (
+	generic ( 	-- values declared at instantiation 
+	
 		CLK_FREQ_HZ : integer := 50000000; -- system clock frequency (Hz)
 		DEBOUNCE_MS : integer := 20;       -- debounce time (ms)
-		count  : natural := 2         -- amount to add on each press (increases/decreases duty_cycle)
+		btn_val	:	integer := 0 -- increments button depending on button val given
 	);
+
 	port (
 		clk       : in  std_logic;                          -- system clock
 		reset   : in  std_logic := '1';                   -- reset button
 		btn_in    : in  std_logic;                          -- push button input (prefer active-high)
-		value_out : out std_logic_vector(7 downto 0)        -- 8-bit counter output
+		output : out integer
 	);
 
 end Button_Incrementer;
 
 architecture Behavioral of Button_Incrementer is
 
-	-- debounce tick count computed from generics
-	constant db_time  := integer := integer((CLK_FREQ_HZ / 1000) * DEBOUNCE_MS);
+	-- debounce tick max_count calculated from generics
+	constant db_time : natural := (CLK_FREQ_HZ / 1000) * DEBOUNCE_MS;
 
 	-- synchronizer and debounce state
 	signal sync0     : std_logic := '0';
@@ -34,12 +36,9 @@ architecture Behavioral of Button_Incrementer is
 	signal prev_stab : std_logic := '0';
 	signal db_cnt    : integer := 0;
 
-	-- internal value
-	signal val       : unsigned(7 downto 0) := (others => '0');
-
 begin
 
-	-- Debounce, clock edge detection, and count increment process
+	-- Debounce, clock edge detection, and max_count increment process
 	process(clk, reset)
 	begin
 		if reset = '0' then
@@ -47,15 +46,14 @@ begin
 			sync1     <= '0';
 			stable    <= '0';
 			prev_stab <= '0';
-			db_cnt    <= 0; -- counter for debouncer
-			val       <= (others => '0');
+			db_cnt    <= 0; -- max_counter for debouncer
 
 		elsif rising_edge(clk) then
 			-- two-stage synchronizer to avoid metastability
 			sync0 <= btn_in;
 			sync1 <= sync0;
 
-			-- debouncer checks if value shave changed over duration of 20 ms (db_cnt)
+			-- debouncer checks if value saved changed over duration of 20 ms (db_cnt)
 			if sync1 /= stable then
 				if db_cnt < db_time then
 					db_cnt <= db_cnt + 1;
@@ -69,14 +67,14 @@ begin
 
 			-- checks for duplicate stable signals to avoid Duty Cycle overcorrecting
 			if stable = '1' and prev_stab = '0' then
-				val <= val + to_unsigned(STEP mod 256, 8);
+				output <= btn_val;
+			else 
+				output <= 0; 
 			end if;
 
-			prev_stab <= stable;
+			prev_stab <= stable; -- set previous value to current stable value for future comparissons
 		end if;
 	end process;
 
-	-- output assignment
-	value_out <= std_logic_vector(val);
-
 end Behavioral;
+

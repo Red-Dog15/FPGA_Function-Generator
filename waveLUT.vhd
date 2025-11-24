@@ -3,12 +3,20 @@ use IEEE.STD_Logic_1164.ALL;
 Use IEEE.NUMERIC_STD.ALL; 
 
 entity waveLUT is
+
 	port(
 		clk 	:	in	STD_LOGIC;
-		wave_out	:	out	STD_LOGIC_VECTOR(7 downto 0)
+		wave_out	:	out	STD_LOGIC_VECTOR(7 downto 0);
+		
+		reset   :      in	STD_LOGIC;                     -- reset button
+		btn0_in    :     in	STD_LOGIC;                   -- push button input (prefer active-high)
+		btn1_in    :     in	STD_LOGIC                   -- push button input (prefer active-high)
 	);
+	
 end waveLUT;
 
+
+		
 architecture Behavioral of waveLUT is
 
 	-- create 32 element 8 bit logic array type
@@ -26,16 +34,54 @@ architecture Behavioral of waveLUT is
 	
 	type state_type is (UPDATE_VALUE, HOLD);
 	signal current_state	:	state_type	:=	UPDATE_VALUE;
-		
+	signal max_count : INTEGER range -100 to 100 := 2;
+	
+	signal plus_pulse    : integer := 1; -- hold incrementer states
+   signal minus_pulse   : integer := 1;
+	
 begin
 
-	process(clk)
 	
+-- instantiate 2 instance of button incrementer, button plut (positive incrementer) & button minus (negative incrementer)
+	
+	Btn_plus : entity work.Button_Incrementer -- buton plus instationation
+	
+		Generic map (
+				btn_val	 =>	  10    -- set count incrementation to 1
+		)
+		port map (
+			clk     =>      clk,                          -- system clock
+			reset    =>     reset,                     -- reset button
+			btn_in    =>     btn0_in,                   -- push button input (prefer active-high), set to button 0
+			output   =>   plus_pulse        -- incrementer state plus
+
+		);
+--			
+	Btn_minus : entity work.Button_Incrementer -- buton minus instationation
+		
+		Generic map (
+				btn_val	 =>	  -10    -- set count incrementation to 1
+		)
+		port map (
+		
+			clk     =>      clk,                          -- system clock
+			reset    =>     reset,                     -- reset button
+			btn_in    =>     btn1_in,                   -- set to button 1
+			output   =>   minus_pulse         -- incrementer state minus
+
+		);
+
+			
+		
+		
+	process(clk)
 		variable i : INTEGER range 0 to 31 := 0;
-		variable count: INTEGER range 0 to 2 := 0;
+		variable count: integer range 0 to 2 := 0;
 			
 		
 	begin 
+		-- adjust for button presses
+		max_count <= max_count + plus_pulse + minus_pulse;
 		
 		if rising_edge(clk)	then
 			case	current_state	is
@@ -50,8 +96,9 @@ begin
 					current_state	<=	HOLD;
 					
 				when	HOLD	=>
-					if count =	2 then
+					if count >=	max_count then
 						current_state <= UPDATE_VALUE;
+						count := 0; -- set count back to zero
 						
 					else
 						count := count + 1; -- iterate count

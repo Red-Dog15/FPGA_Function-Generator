@@ -1,29 +1,1061 @@
-# Compile of tb_Function_Generator.vhd failed with 1 errors.
-# Compile of tb_waveLUT.vhd was successful.
-# Compile of Button_Incrementer.vhd failed with 1 errors.
+# Compile of tb_waveLUT.vhd failed with 20 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd failed with 6 errors.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 2 failed with 26 errors.
+# Compile of tb_waveLUT.vhd failed with 20 errors.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_waveLUT.vhd failed with 20 errors.
+# Compile of tb_waveLUT.vhd failed with 20 errors.
 # Compile of DE1_SOC_golden_top.v was successful.
 # Compile of waveLUT.vhd was successful.
-# 5 compiles, 2 failed with 2 errors.
-# Compile of Button_Incrementer.vhd failed with 1 errors.
-vsim -gui work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
-# vsim -gui work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
-# Start time: 19:04:46 on Nov 14,2025
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 20 errors.
+# Compile of tb_waveLUT.vhd failed with 20 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 20 errors.
+# A bookmark named "bookmark0" has been added for window "Source1"
+# Compile of tb_waveLUT.vhd failed with 23 errors.
+# Compile of tb_waveLUT.vhd failed with 23 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 23 errors.
+# Compile of tb_waveLUT.vhd failed with 20 errors.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 21 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 21 errors.
+# Compile of tb_waveLUT.vhd failed with 20 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 20 errors.
+# Compile of tb_waveLUT.vhd failed with 31 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 31 errors.
+# Compile of tb_waveLUT.vhd failed with 31 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 31 errors.
+# Compile of tb_waveLUT.vhd failed with 11 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 11 errors.
+# Compile of tb_waveLUT.vhd failed with 17 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 17 errors.
+# Compile of tb_waveLUT.vhd failed with 17 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 17 errors.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 17 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 17 errors.
+# Compile of tb_waveLUT.vhd failed with 19 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 19 errors.
+# Compile of tb_waveLUT.vhd failed with 19 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 19 errors.
+# Compile of tb_waveLUT.vhd failed with 12 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 12 errors.
+# Compile of tb_waveLUT.vhd failed with 12 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 12 errors.
+# Compile of tb_waveLUT.vhd failed with 12 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 12 errors.
+# Compile of tb_waveLUT.vhd failed with 12 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 12 errors.
+# Compile of tb_waveLUT.vhd failed with 12 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 12 errors.
+# Compile of tb_waveLUT.vhd failed with 12 errors.
+# Compile of tb_waveLUT.vhd failed with 12 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 12 errors.
+# Compile of tb_waveLUT.vhd failed with 4 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 4 errors.
+# Compile of tb_waveLUT.vhd failed with 14 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 14 errors.
+# Compile of tb_waveLUT.vhd failed with 14 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 14 errors.
+# Compile of tb_waveLUT.vhd failed with 3 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of tb_waveLUT.vhd failed with 3 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of tb_waveLUT.vhd failed with 3 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Load canceled
+# Load canceled
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 18:02:15 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
 # Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:02:16 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 43
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 18:02:50 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:02:51 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.button_incrementer work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.wavelut work.wavelut_tb 
+# Start time: 18:04:41 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:04:41 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vsim -gui work.button_incrementer work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.wavelut work.wavelut_tb 
+# Start time: 18:04:59 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:04:59 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim work.wavelut_tb
+# vsim work.wavelut_tb 
+# Start time: 18:05:03 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.wavelut_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.button_incrementer(behavioral)
+run
+run
+run
+quit -sim
+vsim work.button_incrementer work.wavelut work.wavelut_tb
+# End time: 18:09:49 on Nov 22,2025, Elapsed time: 0:04:46
+# Errors: 0, Warnings: 1
+# vsim work.button_incrementer work.wavelut work.wavelut_tb 
+# Start time: 18:09:49 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:09:50 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:10:10 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:10:11 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:10:17 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+vsim work.button_incrementer
+# End time: 18:10:17 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# vsim work.button_incrementer 
+# Start time: 18:10:17 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+vsim work.button_incrementer
+# End time: 18:10:18 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# vsim work.button_incrementer 
+# Start time: 18:10:18 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+vsim work.button_incrementer
+# End time: 18:10:18 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# vsim work.button_incrementer 
+# Start time: 18:10:18 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:10:19 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:10:21 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:10:22 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:10:38 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:10:38 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:10:39 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:10:39 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:10:42 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:10:42 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:11:02 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:11:02 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:11:04 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:11:04 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+vsim work.wavelut
+# vsim work.wavelut 
+# Start time: 18:12:03 on Nov 22,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.wavelut(behavioral)
+# Loading work.button_incrementer(behavioral)
+vsim work.button_incrementer
+# End time: 18:12:21 on Nov 22,2025, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 4
+# vsim work.button_incrementer 
+# Start time: 18:12:21 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:12:22 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:12:32 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+vsim work.button_incrementer
+# End time: 18:12:33 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# vsim work.button_incrementer 
+# Start time: 18:12:33 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:12:34 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:12:34 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:12:35 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 18:13:17 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Fatal: (vsim-3350) Generic "btn_val" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /button_incrementer File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:13:17 on Nov 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer work.wavelut work.wavelut_tb
+# vsim work.button_incrementer work.wavelut work.wavelut_tb 
+# Start time: 18:44:12 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# ** Error: (vsim-13) Recompile work.wavelut(behavioral) because work.button_incrementer has changed.
+# Error loading design
+# End time: 18:44:13 on Nov 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 5
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer work.wavelut work.wavelut_tb
+# vsim work.button_incrementer work.wavelut work.wavelut_tb 
+# Start time: 18:44:52 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.wavelut(behavioral)
 # Loading work.wavelut_tb(behavioral)
-add wave -position end  sim:/wavelut_tb/wave_out
+run -all
+run -all
+# Load canceled
+run
+run
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
-#           Attempting to use alternate WLF file "./wlftc5yyx4".
+#           Attempting to use alternate WLF file "./wlft0szki7".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftc5yyx4
-add wave -position end  sim:/wavelut_tb/clk
+#           Using alternate file: ./wlft0szki7
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
 run
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+run
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+run
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
 run -all
-add wave -position end  sim:/wavelut_tb/clk
-# End time: 23:05:15 on Nov 14,2025, Elapsed time: 4:00:29
-# Errors: 0, Warnings: 9
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+quit -sim
+# End time: 19:03:07 on Nov 22,2025, Elapsed time: 0:18:15
+# Errors: 0, Warnings: 13
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd failed with 1 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 19:06:58 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlftjiczq2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjiczq2
+run
+# Break key hit
+run
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run -all
+# ** Fatal: (vsim-3421) Value 3 is out of range 0 to 2.
+#    Time: 20003590 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 104
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 104
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 104 Process line__77
+# 
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 104 Process line__77
+# 
+quit -sim
+# End time: 19:16:39 on Nov 22,2025, Elapsed time: 0:09:41
+# Errors: 1, Warnings: 12
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 19:17:03 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlftv98knb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftv98knb
+run
+run
+add wave -position insertpoint  \
+sim:/button_incrementer/btn_in
+add wave -position insertpoint  \
+sim:/button_incrementer/output
+run
+# Break key hit
+# Break key hit
+run
+quit -sim
+# End time: 19:22:50 on Nov 22,2025, Elapsed time: 0:05:47
+# Errors: 0, Warnings: 4
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer
+# vsim work.button_incrementer 
+# Start time: 21:19:46 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+quit -sim
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# End time: 21:20:18 on Nov 22,2025, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 2
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 21:20:18 on Nov 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/wavelut_tb/reset
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlft75fhrr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft75fhrr
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+add wave -position end sim:/wavelut/Btn_plus/*
+add wave -position end  sim:/wavelut/max_count
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+add wave -position insertpoint  \
+sim:/button_incrementer/db_time
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+step -over -current
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+quit -sim
+# End time: 21:52:23 on Nov 23,2025, Elapsed time: 24:32:05
+# Errors: 1, Warnings: 2
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 21:52:35 on Nov 23,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+add wave -position end  sim:/button_incrementer/db_cnt
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlfta4wm5x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta4wm5x
+add wave -position end  sim:/button_incrementer/btn_in
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+add wave -position end sim:/wavelut/Btn_plus/*
+add wave -position insertpoint  \
+sim:/wavelut/plus_pulse
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+quit -sim
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# End time: 09:46:47 on Nov 24,2025, Elapsed time: 11:54:12
+# Errors: 0, Warnings: 2
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 09:46:47 on Nov 24,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlftntvsmv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftntvsmv
+add wave -position insertpoint sim:/wavelut/Btn_plus/*
+add wave -position end  sim:/wavelut/plus_pulse
+add wave -position end  sim:/wavelut/max_count
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+add wave -position end  sim:/button_incrementer/btn_in
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run -all
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
