@@ -1,16 +1,6 @@
-# Compile of DE1_SOC_golden_top.v was successful.
-# Compile of tb_waveLUT.vhd was successful.
-# Compile of Button_Incrementer.vhd was successful.
-# Compile of waveLUT.vhd was successful.
-# 4 compiles, 0 failed with no errors.
-# Compile of DE1_SOC_golden_top.v was successful.
-# Compile of tb_waveLUT.vhd was successful.
-# Compile of Button_Incrementer.vhd was successful.
-# Compile of waveLUT.vhd was successful.
-# 4 compiles, 0 failed with no errors.
 vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
 # vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
-# Start time: 17:45:20 on Nov 24,2025
+# Start time: 18:43:39 on Nov 24,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -19,39 +9,11 @@ vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wave
 # Loading work.DE1_SOC_golden_top
 # Loading work.wavelut(behavioral)
 # Loading work.wavelut_tb(behavioral)
+# Load canceled
 add wave -position insertpoint  \
 sim:/wavelut_tb/clk \
 sim:/wavelut_tb/wave_out \
 sim:/wavelut_tb/reset \
 sim:/wavelut_tb/btn0_in \
 sim:/wavelut_tb/btn1_in
-add wave -position insertpoint  \
-sim:/wavelut/max_count \
-sim:/wavelut/plus_pulse \
-sim:/wavelut/minus_pulse
-vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
-# End time: 17:46:08 on Nov 24,2025, Elapsed time: 0:00:48
-# Errors: 0, Warnings: 3
-# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
-# Start time: 17:46:08 on Nov 24,2025
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.button_incrementer(behavioral)
-# Loading work.DE1_SOC_golden_top
-# Loading work.wavelut(behavioral)
-# Loading work.wavelut_tb(behavioral)
-add wave -position insertpoint  \
-sim:/wavelut_tb/clk \
-sim:/wavelut_tb/wave_out \
-sim:/wavelut_tb/reset \
-sim:/wavelut_tb/btn0_in \
-sim:/wavelut_tb/btn1_in
-add wave -position insertpoint  \
-sim:/wavelut/Btn_plus/output
-add wave -position insertpoint  \
-sim:/wavelut/Btn_plus/stable
-add wave -position insertpoint  \
-sim:/wavelut/Btn_plus/prev_stab
 run

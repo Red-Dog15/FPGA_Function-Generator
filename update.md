@@ -12,7 +12,7 @@ INFO: <br />
 <br />
 <br />
 
-UPDATE 1.1  <br />  <br />
+**UPDATE 1.1**  <br />  <br />
 Problem : <br />
 * Testbench crashing at 20ms when count changes <br />
 
@@ -31,4 +31,13 @@ Problem : <br />
 
 
 Fix: <br />  
-* 
+
+* adjusted upper and lower bounds of count variable to match max_count
+* changed sync to reverse logic
+* Before Button0 debouncer time:  
+&nbsp; &nbsp; &nbsp; &nbsp;  <img width="555" height="722" alt="image" src="https://github.com/user-attachments/assets/1b3bb6c5-1631-4acd-8ab9-381be7093c0c" />
+
+
+* After Button0 debouncer time: ( here the button increments twice as the testbench suggests)  <br />
+&nbsp; &nbsp; &nbsp; &nbsp;<img width="320" height="709" alt="image" src="https://github.com/user-attachments/assets/22c3942f-911a-445d-b066-8b1bca49bd40" />
+
