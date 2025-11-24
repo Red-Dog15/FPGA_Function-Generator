@@ -24,11 +24,11 @@ Problem : <br />
 * Before Button0 debouncer time:  
 &nbsp; &nbsp; &nbsp; &nbsp;<img width="305" height="502" alt="image" src="https://github.com/user-attachments/assets/27230deb-f236-40e5-bf50-3e253ef5783c" /><br />
 
-* After Button0 debouncer time:
+* After Button0 debouncer time:  <br />
 &nbsp; &nbsp; &nbsp; &nbsp;<img width="353" height="534" alt="image" src="https://github.com/user-attachments/assets/b5f46a3a-9778-4bbd-9d35-13498111386c" />
 
 
 
 
 Fix: <br />  
-* TBD
+* 
