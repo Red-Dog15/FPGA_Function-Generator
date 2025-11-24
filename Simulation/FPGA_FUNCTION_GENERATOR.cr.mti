@@ -1,12 +1,11 @@
-C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd
+C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity waveLUT
--- Compiling architecture Behavioral of waveLUT
--- Loading entity Button_Incrementer
+-- Compiling entity Button_Incrementer
+-- Compiling architecture Behavioral of Button_Incrementer
 
 } {} {}} C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/DE1_SOC_golden_top.v {1 {vlog -work work -stats=none C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/DE1_SOC_golden_top.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

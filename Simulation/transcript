@@ -864,3 +864,198 @@ restart -f
 # Loading work.wavelut(behavioral)
 # Loading work.wavelut_tb(behavioral)
 run
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+step -over -current
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+quit -sim
+# End time: 21:52:23 on Nov 23,2025, Elapsed time: 24:32:05
+# Errors: 1, Warnings: 2
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 21:52:35 on Nov 23,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+add wave -position end  sim:/button_incrementer/db_cnt
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlfta4wm5x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta4wm5x
+add wave -position end  sim:/button_incrementer/btn_in
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+add wave -position end sim:/wavelut/Btn_plus/*
+add wave -position insertpoint  \
+sim:/wavelut/plus_pulse
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+quit -sim
+vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb
+# End time: 09:46:47 on Nov 24,2025, Elapsed time: 11:54:12
+# Errors: 0, Warnings: 2
+# vsim work.button_incrementer work.DE1_SOC_golden_top work.wavelut work.wavelut_tb 
+# Start time: 09:46:47 on Nov 24,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+add wave -position insertpoint  \
+sim:/wavelut_tb/clk \
+sim:/wavelut_tb/wave_out \
+sim:/wavelut_tb/reset \
+sim:/wavelut_tb/btn0_in \
+sim:/wavelut_tb/btn1_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nw5544n  Hostname: ME-DA002-016  ProcessID: 10372
+#           Attempting to use alternate WLF file "./wlftntvsmv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftntvsmv
+add wave -position insertpoint sim:/wavelut/Btn_plus/*
+add wave -position end  sim:/wavelut/plus_pulse
+add wave -position end  sim:/wavelut/max_count
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+add wave -position end  sim:/button_incrementer/btn_in
+run
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run -all
+# ** Fatal: (vsim-3421) Value -8 is out of range 0 to 2.
+#    Time: 20000190 ns  Iteration: 1  Process: /wavelut_tb/dut/line__77 File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd Line: 101
+# Fatal error in Process line__77 at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd line 101
+# 
+# HDL call sequence:
+# Stopped at C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd 101 Process line__77
+# 
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+run

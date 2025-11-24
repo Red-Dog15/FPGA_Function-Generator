@@ -98,7 +98,7 @@ begin
 				when	HOLD	=>
 					if count >=	max_count then
 						current_state <= UPDATE_VALUE;
-						count := max_count; -- set count back to hold value
+						count := 0; -- set count back to zero
 						
 					else
 						count := count + 1; -- iterate count

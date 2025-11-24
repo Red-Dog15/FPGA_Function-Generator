@@ -56,24 +56,25 @@ begin
         wait for 3 us;
         
 
-        -- press BTN0 once (increase speed)-
+        -- press BTN0 once (increase speed)
         btn0_in <= '0';
-        wait for 500 ns;
+        wait for 21 ms; -- wait longer than 20 to activate debouncer
         btn0_in <= '1';
-        wait for 500 ns;
+        wait for 200 ns;
 	btn0_in <= '0';
-        wait for 500 ns;
+        wait for 21 ms;
         btn0_in <= '1';
+        wait for 200 ns;
 
         -- press BTN1 once (decrease speed)
-
         btn1_in <= '0';
-        wait for 50 ns;
+        wait for 21 ms;
         btn1_in <= '1';
-        wait for 50 ns;
+        wait for 200 ns;
     	btn1_in <= '0';
-        wait for 50 ns;
-        btn1_in <= '1';        
+        wait for 21 ms;
+        btn1_in <= '1';
+        wait for 200 ns;       
 	wait;
         
     end process;
