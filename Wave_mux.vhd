@@ -24,16 +24,16 @@ architecture Behavioral of Wave_mux is
 
 begin
 	
-	
 	-- instantiate PWM wave
 	PWM0 : entity work.PWM_gen
 	port map(
 		 clk => clk,
 		 reset => reset,
-		 duty => 50,   -- TEMP constant
-		 pwm_out => pwm_wave(7)
+		 pwm_out => pwm_wave(7),
+		 btn0_in	=> btn0_in,
+		 btn1_in => btn1_in
 	);
-	
+
 		-- tie remaining bits
 	pwm_wave(6 downto 0) <= (others => pwm_wave(7));
 	

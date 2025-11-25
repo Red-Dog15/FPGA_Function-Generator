@@ -7,7 +7,7 @@ entity PWM_gen is
     Port(
         clk        : in std_logic;
         reset      : in std_logic;
-        pwm_out    : out std_logic;
+        pwm_out    : out STD_LOGIC_VECTOR(7 DOWNTO 0);
 		  btn0_in	:  in std_logic;
 		  btn1_in  :	in std_logic
     );
@@ -15,11 +15,12 @@ entity PWM_gen is
 end PWM_gen;
 
 architecture Behavioral of PWM_gen is
-    signal duty  : integer range 0 to 100 := 50;   -- duty % cycle
+    -- initiate signals
+	 signal duty  : integer range 0 to 100 := 50;   -- duty % cycle
     signal cnt : integer range 0 to 99 := 0;
 	 signal plus_pulse    : integer := 0; -- hold incrementer states
     signal minus_pulse   : integer := 0;
-    signal duty_incrementer   : integer := 10;
+	 constant duty_incrementer   : integer := 10; -- how much each button press changes the duty cycle
 
 begin
 
@@ -44,7 +45,7 @@ begin
 		Generic map (
         		CLK_FREQ_HZ => 50000000,
         		DEBOUNCE_MS => 20,
-				btn_val	 =>	  -duty_incrementer    -- set to -dutyincrementer signal for minus pulse
+				btn_val	 =>	 -duty_incrementer    -- set to -dutyincrementer signal for minus pulse
 		)
 		port map (
 		
@@ -61,7 +62,7 @@ begin
 		  duty <= duty + plus_pulse + minus_pulse; -- increment duty cycle by pulses
         if reset = '0' then
             cnt <= 0;
-            pwm_out <= '0';
+            pwm_out <= "00000000";
         elsif rising_edge(clk) then
             
             if cnt = 99 then --reset 
@@ -71,9 +72,9 @@ begin
             end if;
             
             if cnt < duty then 
-                pwm_out <= '1'; --output 0 only when count surpasses set duty cycle 
+                pwm_out <= "1111111"; --output 0 only when count surpasses set duty cycle 
             else
-                pwm_out <= '0';
+                pwm_out <= "00000000";
             end if;
         end if;
     end process;
