@@ -29,16 +29,13 @@ begin
 	port map(
 		 clk => clk,
 		 reset => reset,
-		 pwm_out => pwm_wave(7),
+		 pwm_out => pwm_wave,
 		 btn0_in	=> btn0_in,
 		 btn1_in => btn1_in
 	);
 
-		-- tie remaining bits
-	pwm_wave(6 downto 0) <= (others => pwm_wave(7));
-	
 	-- instantiate SIN wave
-	sin_wave : entity work.waveLUT
+	SIN0 : entity work.waveLUT
 	port map(
 		 clk => clk,
 		 reset => reset,
