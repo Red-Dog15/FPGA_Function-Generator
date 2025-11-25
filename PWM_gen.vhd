@@ -25,14 +25,14 @@ begin
             pwm_out <= '0';
         elsif rising_edge(clk) then
             
-            if cnt = 99 then
+            if cnt = 99 then --reset 
                 cnt <= 0;
             else 
-                cnt <= cnt + 1;
+                cnt <= cnt + 1; -- increment count every clock cycle
             end if;
             
-            if cnt < duty then
-                pwm_out <= '1';
+            if cnt < duty then 
+                pwm_out <= '1'; --output 0 only when count surpasses set duty cycle 
             else
                 pwm_out <= '0';
             end if;
