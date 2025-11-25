@@ -22,7 +22,7 @@ end Wave_mux;
 architecture Behavioral of Wave_mux is
 
 	-- Build an enumerated type for the state machine
-	type state_type is (s0, s1);
+	type state_type is (state_pwm, state_wave, state_null);
 
 	-- Register to hold the current state
 	signal state   : state_type;
@@ -73,33 +73,45 @@ begin
 	process (clk, reset)
 	begin
 		if reset = '1' then
-			state <= s0;
+			state <= state_pwm;
 		elsif (rising_edge(clk)) then
 			case state is
-				when s0=>
-					if input = '1' then
-						state <= s1;
+				when state_pwm=>
+					if sw0 = '0' & sw1 = '1' then --checks for sw0 logic
+						state <= state_wave;
+					else if sw0 = '1' & sw1 = '1' then --checks for null state requirements
+						state <= state_null;
 					else
-						state <= s0;
+						state <= state_pwm;
 					end if;
-				when s1=>
-					if input = '1' then
-						state <= s2;
+				when state_wave=>
+					if sw0 = '1' & sw1 = '0' then --checks for sw0 logic
+						state <= state_pwm;
+					else if sw0 = '1' & sw1 = '1' then --checks for null state requirements
+						state <= state_null;
 					else
-						state <= s1;
+						state <= state_wave;
 					end if;
-
+				when state_null =>
+					if sw0 = '1' & sw1 = '0' then --checks for sw0 logic
+						state <= state_pwm;
+					else if sw0 = '0' & sw1 = '1' then --checks for null state requirements
+						state <= state_wave;
+					else
+						state <= state_null;
+					end if;
 
 	-- Logic to determine output
 	process (state)
 	begin
 		case state is
-			when s0 =>
-				output <= "00";
-			when s1 =>
-				output <= "01";
-			when s2 =>
-				output <= "10";
+			when state_pwm =>
+				output <= pwm_wave;
+			when state_wave  =>
+				output <= sin_wave;
+			when state_wave  =>
+				output <= "00000000";
+
 		end case;
 	end process;
 
