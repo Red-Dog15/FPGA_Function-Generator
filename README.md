@@ -20,5 +20,12 @@ A function Generator designed for FPGA system on Cyclone 5, DE1-SOC board
 
   * These screenshots are taken from model sim, and were taken at the same scale
 
+**PWM_SQUARE_WAVE**
+Values for Duty Cycle (Slightly off due to measurement accuracy):
+* Starting Duty Cycle (50%):  
+&nbsp; &nbsp; &nbsp; &nbsp; <img width="386" height="672" alt="image" src="https://github.com/user-attachments/assets/bb1bfe26-4215-4952-b20b-1d58c231101a" />
+* Duty Cycle after 2 button incrementations (70&):  
+&nbsp; &nbsp; &nbsp; &nbsp; <img width="374" height="709" alt="image" src="https://github.com/user-attachments/assets/ddcbfd0b-5ac0-4fbc-be3c-526ef690038a" />
+
 -- **Contributers:**
 * RedDog15

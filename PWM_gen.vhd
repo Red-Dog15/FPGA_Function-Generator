@@ -72,7 +72,7 @@ begin
             end if;
             
             if cnt < duty then 
-                pwm_out <= "1111111"; --output 0 only when count surpasses set duty cycle 
+                pwm_out <= "11111111"; --output 0 only when count surpasses set duty cycle 
             else
                 pwm_out <= "00000000";
             end if;
