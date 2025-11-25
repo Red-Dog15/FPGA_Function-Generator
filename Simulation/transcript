@@ -32,3 +32,17 @@ sim:/pwm_gen_tb/btn1_in
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 #           Using alternate file: ./wlfthwnrf9
 run
+add wave -position end  sim:/wave_mux/pwm_wave
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+run
+# End time: 23:39:03 on Nov 25,2025, Elapsed time: 1:38:32
+# Errors: 0, Warnings: 2
