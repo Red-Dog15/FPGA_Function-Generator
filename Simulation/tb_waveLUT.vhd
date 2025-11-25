@@ -11,8 +11,8 @@ architecture Behavioral of waveLUT_tb is
 	signal clk	:	STD_LOGIC	:=	'0';
 	signal wave_out	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
 	signal reset    : STD_LOGIC := '1';
-    	signal btn0_in  : STD_LOGIC := '1';
-    	signal btn1_in  : STD_LOGIC := '1';
+   signal btn0_in  : STD_LOGIC := '1';
+   signal btn1_in  : STD_LOGIC := '1';
 
 begin
     -- instantiate DUT

@@ -7,16 +7,15 @@ entity PWM_gen is
     Port(
         clk        : in std_logic;
         reset      : in std_logic;
-        duty       : in integer range 0 to 100;   -- duty % cycle
         pwm_out    : out std_logic;
 		  btn0_in	:  in std_logic;
-		  btn1_in  L:	in std_logic;
+		  btn1_in  :	in std_logic
     );
 	 
 end PWM_gen;
 
 architecture Behavioral of PWM_gen is
-
+    signal duty  : integer range 0 to 100 := 50;   -- duty % cycle
     signal cnt : integer range 0 to 99 := 0;
 	 signal plus_pulse    : integer := 0; -- hold incrementer states
     signal minus_pulse   : integer := 0;
@@ -59,7 +58,7 @@ begin
 			
     process(clk, reset)
     begin
-		  duty = duty + plus_pulse + minus_pulse -- increment duty cycle by pulses
+		  duty <= duty + plus_pulse + minus_pulse; -- increment duty cycle by pulses
         if reset = '0' then
             cnt <= 0;
             pwm_out <= '0';
