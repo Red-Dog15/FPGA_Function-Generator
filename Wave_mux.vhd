@@ -10,9 +10,9 @@ entity Wave_mux is
 		reset   :      in	STD_LOGIC;                     -- reset button
 		btn0_in    :     in	STD_LOGIC;                   -- push button input (prefer active-high)
 		btn1_in    :     in	STD_LOGIC;                -- push button input (prefer active-high)
-		sw0, sw1 :  in	STD_LOGIC;                   -- switch to change between sin and square wave
+		sw0 :  in	STD_LOGIC;                   -- switch to change between sin and square wave
 		LEDs : out std_logic_vector(2 downto 0);		-- leds tied to 3 bit Standerd logic vector
-		SSEG0, SSEG1 : out std_logic_vector(7 downto 0); 			-- state LEDS
+		SSEG0, SSEG1 : out std_logic_vector(6 downto 0); 			-- state LEDS
 
 		--wave_out waves
 		wave_out	:	out	STD_LOGIC_VECTOR(7 downto 0)	
@@ -23,17 +23,17 @@ end Wave_mux;
 architecture Behavioral of Wave_mux is
 
 	-- Build an enumerated type for the state machine
-	type state_type is (state_pwm, state_wave, state_null);
+	type state_type is (state_pwm, state_wave);
 
 	-- Register to hold the current state
-	signal state   : state_type;
+	signal state   : state_type := state_wave;
 	signal sin_wave : STD_LOGIC_VECTOR(7 downto 0);
 	signal pwm_wave :	STD_LOGIC_VECTOR(7 downto 0);
 	signal sseg_tens : Integer range 0 to 9 := 0;
 	signal sseg_ones : Integer range 0 to 9 := 0;
 
 begin
-	
+
 	-- instantiate PWM wave
 	PWM0 : entity work.PWM_gen
 	port map(
@@ -56,44 +56,23 @@ begin
 	);
 
 	-- Logic to advance to the next state
-	process (clk, reset)
+	process(clk, reset)
 	begin
-		if reset = '1' then
-			state <= state_pwm;
-		elsif (rising_edge(clk)) then
+		if (rising_edge(clk)) then
 			case state is -- state machine for wave multiplexer
 				when state_pwm=> -- describe pwm wave state condtions
-					if (sw0 = '0') and (sw1 = '1') then --checks for sw0 logic
+					if (sw0 = '0')  then --checks for sw0 logic
 						state <= state_wave;
-					elsif (sw0 = '1') and (sw1 = '1') then --checks for null state requirements
-						state <= state_null;
 					else
 						state <= state_pwm;
 					end if;
 					
 				when state_wave=> -- describe sin wave state conditions
-					if (sw0 = '1') and (sw1 = '0') then --checks for sw0 logic
+					if (sw0 = '1')  then --checks for sw0 logic
 						state <= state_pwm;
-					elsif (sw0 = '1') and (sw1 = '1') then --checks for null state requirements
-						state <= state_null;
 					else
 						state <= state_wave;
-					end if;
-					
-				when state_null =>  -- describe null state conditions (neither gate is open)
-					if (sw0 = '1') and (sw1 = '0') then --checks for sw0 logic
-						state <= state_pwm;
-					elsif (sw0 = '0') and (sw1 = '1') then --checks for null state requirements
-						state <= state_wave;
-					else
-						state <= state_null;
-					end if;
-					
-					-- Duty cycle arithmatic for sseg
-
-
-					-- TIP FOR WORK: divide duty cycle by 10, implement the digit on left sseg, and always keep left on 0 cause Duty cycle implements by 10
-					
+					end if;					
 			end case;
 		end if;
 	end process;
@@ -108,9 +87,6 @@ begin
 			when state_wave  =>
 				wave_out <= sin_wave;
 				LEDs <= "101"; 
-			when state_null  =>
-				wave_out <= "00000000";
-				LEDs <= "011"; 
 		end case;
 	end process;
 

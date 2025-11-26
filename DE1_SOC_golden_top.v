@@ -263,7 +263,6 @@ Wave_mux wave_mux_inst (
     .btn1_in  (KEY[1]),
 	 .reset    (KEY[3]),	
     .sw0      (SW[0]),		// link switches 
-    .sw1      (SW[1]),
     .LEDs     (LEDR[2:0]),			// link led displays
     .SSEG0    (HEX0[6:0]),      // link sseg displays
     .SSEG1    (HEX0[6:0]),      

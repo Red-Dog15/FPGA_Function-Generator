@@ -15,7 +15,7 @@ Z0 w1764000019
 Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 98
+!i122 351
 Z4 dC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation
 Z5 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd
 Z6 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd
@@ -25,9 +25,9 @@ V<KBT^YcAII6]UW7=z;UIQ3
 !s100 n[G8:PBbU``lch`aJOo?U3
 Z7 OV;C;2020.1;71
 32
-Z8 !s110 1764113900
+Z8 !s110 1764172540
 !i10b 1
-Z9 !s108 1764113900.000000
+Z9 !s108 1764172540.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd|
 Z11 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Button_Incrementer.vhd|
 !i113 1
@@ -38,7 +38,7 @@ R1
 R2
 R3
 Z14 DEx4 work 18 button_incrementer 0 22 <KBT^YcAII6]UW7=z;UIQ3
-!i122 98
+!i122 351
 l39
 L27 53
 VmIQ:m58[bB84nfP?^QmEG0
@@ -54,23 +54,23 @@ R11
 R12
 R13
 vDE1_SOC_golden_top
-!s110 1764113899
+R8
 !i10b 1
-!s100 D9__d<Di8^Lf7UjW6]Da00
+!s100 >oP];d0k@hY1HABcAhAPI0
 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Idm^EMWT_nDK;Lo9=ag?ja0
+IM`M3OLfe9C4PYX[G=5eQB0
 VDg1SIo80bB@j0V0VzS_@n1
 R4
-w1763144027
+w1764171046
 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/DE1_SOC_golden_top.v
 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/DE1_SOC_golden_top.v
-!i122 96
-L0 54 212
+!i122 349
+L0 54 229
 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1764113899.000000
+R9
 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/DE1_SOC_golden_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/DE1_SOC_golden_top.v|
 !i113 1
@@ -78,11 +78,11 @@ o-work work
 tCvgOpt 0
 n@d@e1_@s@o@c_golden_top
 Epwm_gen
-Z15 w1764107930
+Z15 w1764150736
 R1
 R2
 R3
-!i122 101
+!i122 354
 R4
 Z16 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/PWM_gen.vhd
 Z17 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/PWM_gen.vhd
@@ -92,11 +92,11 @@ VPCm=_8ikHdDYa<N4_H88[3
 !s100 biJ5_n6O:GNRnE`9U`VKB2
 R7
 32
-Z18 !s110 1764113901
+R8
 !i10b 1
-Z19 !s108 1764113901.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/PWM_gen.vhd|
-Z21 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/PWM_gen.vhd|
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/PWM_gen.vhd|
+Z19 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/PWM_gen.vhd|
 !i113 1
 R12
 R13
@@ -105,120 +105,164 @@ R14
 R1
 R2
 R3
-Z22 DEx4 work 7 pwm_gen 0 22 PCm=_8ikHdDYa<N4_H88[3
-!i122 101
+Z20 DEx4 work 7 pwm_gen 0 22 PCm=_8ikHdDYa<N4_H88[3
+!i122 354
 l25
-L17 66
-V]CzBi<W8keH]_8Ua98WJH3
-!s100 >j6Dc5O:8joe:h6bd5gMi2
+L17 67
+V3l5[Alb8Y;oH^Gl_^78Q33
+!s100 ^`<3oZhk^m:LhhAmK]^S:1
 R7
 32
-R18
+R8
 !i10b 1
+R9
+R18
 R19
-R20
-R21
 !i113 1
 R12
 R13
 Epwm_gen_tb
-Z23 w1764106987
+Z21 w1764165871
 R1
 R2
 R3
-!i122 100
+!i122 353
 R4
-Z24 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_PWM_gen.vhd
-Z25 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_PWM_gen.vhd
+Z22 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_PWM_gen.vhd
+Z23 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_PWM_gen.vhd
 l0
 L7 1
 VI`^bhlQ1nOP@lWWD551gC3
 !s100 5bmOj[U=^zL7N@UEJ;8zK0
 R7
 32
-R18
+R8
 !i10b 1
 R9
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_PWM_gen.vhd|
-Z27 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_PWM_gen.vhd|
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_PWM_gen.vhd|
+Z25 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_PWM_gen.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R22
+R20
 R1
 R2
 R3
 DEx4 work 10 pwm_gen_tb 0 22 I`^bhlQ1nOP@lWWD551gC3
-!i122 100
+!i122 353
 l17
 L10 73
 VH7:]g^kUPeDSi]E@k171I0
 !s100 ?:44]VT[YW88W2]bcnPnl0
 R7
 32
-R18
+R8
 !i10b 1
 R9
-R26
-R27
+R24
+R25
 !i113 1
 R12
 R13
 Ewave_mux
-Z28 w1764106950
+Z26 w1764172512
 R1
 R2
 R3
-!i122 102
+!i122 355
 R4
-Z29 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Wave_mux.vhd
-Z30 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Wave_mux.vhd
+Z27 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Wave_mux.vhd
+Z28 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Wave_mux.vhd
 l0
 L6 1
-V;54URBFal^:J^AaQNoh`83
-!s100 :fA96ZdlN_9=j=^d7C_LQ2
+V7<;ZB7JJYDSh;lJenJ<]W0
+!s100 bI7@]1g>kC885RSoOY9OS3
 R7
 32
-R18
+R8
 !i10b 1
-R19
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Wave_mux.vhd|
-Z32 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Wave_mux.vhd|
+R9
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Wave_mux.vhd|
+Z30 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Wave_mux.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-Z33 DEx4 work 7 wavelut 0 22 h356[=RJXbem:;l^ieoCj0
-R22
+Z31 DEx4 work 7 wavelut 0 22 h356[=RJXbem:;l^ieoCj0
+R20
 R1
 R2
 R3
-Z34 DEx4 work 8 wave_mux 0 22 ;54URBFal^:J^AaQNoh`83
-!i122 102
-l25
-Z35 L22 29
-Z36 V1f=TYC`hdj^HH^[>ea04N3
-Z37 !s100 _>IeSd1egm1HNaZc=;[3i2
+Z32 DEx4 work 8 wave_mux 0 22 7<;ZB7JJYDSh;lJenJ<]W0
+!i122 355
+l35
+L23 71
+V?QM6SRTzmS@jOO7:=JcK82
+!s100 lmh;bYb2czYmCCHFB7NRn3
 R7
 32
-R18
+R8
 !i10b 1
-R19
-R31
+R9
+R29
+R30
+!i113 1
+R12
+R13
+Ewave_mux_tb
+Z33 w1764172536
+R1
+R2
+R3
+!i122 356
+R4
+Z34 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_Wave_mux.vhd
+Z35 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_Wave_mux.vhd
+l0
+L9 1
+VLGUn2BC?2k;nGz^]ie<b60
+!s100 5mPh7OLm4e4NdGGi>6]MS0
+R7
+32
+Z36 !s110 1764172541
+!i10b 1
+R9
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_Wave_mux.vhd|
+Z38 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_Wave_mux.vhd|
+!i113 1
+R12
+R13
+Abehavioral
 R32
+R1
+R2
+R3
+Z39 DEx4 work 11 wave_mux_tb 0 22 LGUn2BC?2k;nGz^]ie<b60
+!i122 356
+l23
+L12 146
+V^026_W^C?S8>oGhB9VBib2
+!s100 lKTZ5o@e4TJVUkTJRJ?[42
+R7
+32
+R36
+!i10b 1
+R9
+R37
+R38
 !i113 1
 R12
 R13
 Ewavelut
-Z38 w1764104147
+Z40 w1764104147
 R1
 R2
 R3
-!i122 99
+!i122 352
 R4
-Z39 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd
-Z40 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd
+Z41 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd
+Z42 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd
 l0
 L5 1
 Vh356[=RJXbem:;l^ieoCj0
@@ -228,8 +272,8 @@ R7
 R8
 !i10b 1
 R9
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd|
-Z42 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd|
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd|
+Z44 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/waveLUT.vhd|
 !i113 1
 R12
 R13
@@ -238,8 +282,8 @@ R14
 R1
 R2
 R3
-R33
-!i122 99
+R31
+!i122 352
 l42
 L20 95
 VhEFl]JS6n_e94UZ?hD4^92
@@ -249,20 +293,20 @@ R7
 R8
 !i10b 1
 R9
-R41
-R42
+R43
+R44
 !i113 1
 R12
 R13
 Ewavelut_tb
-Z43 w1764105526
+Z45 w1764105526
 R1
 R2
 R3
-!i122 97
+!i122 350
 R4
-Z44 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_waveLUT.vhd
-Z45 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_waveLUT.vhd
+Z46 8C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_waveLUT.vhd
+Z47 FC:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_waveLUT.vhd
 l0
 L7 1
 Vb5`eITV1lb2F9BFKi3;JB1
@@ -272,18 +316,18 @@ R7
 R8
 !i10b 1
 R9
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_waveLUT.vhd|
-Z47 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_waveLUT.vhd|
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_waveLUT.vhd|
+Z49 !s107 C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/Simulation/tb_waveLUT.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R33
+R31
 R1
 R2
 R3
 DEx4 work 10 wavelut_tb 0 22 b5`eITV1lb2F9BFKi3;JB1
-!i122 97
+!i122 350
 l17
 L10 72
 Vc3UDFD[NeRk3]efz?DU7;0
@@ -293,8 +337,8 @@ R7
 R8
 !i10b 1
 R9
-R46
-R47
+R48
+R49
 !i113 1
 R12
 R13

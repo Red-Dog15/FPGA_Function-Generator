@@ -1,7 +1,25 @@
-# Load canceled
-vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wavelut work.wavelut_tb
-# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wavelut work.wavelut_tb 
-# Start time: 12:58:21 on Nov 26,2025
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
+# Start time: 14:30:50 on Nov 26,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -10,26 +28,1206 @@ vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_
 # Loading work.DE1_SOC_golden_top
 # Loading work.pwm_gen(behavioral)
 # Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
 # Loading work.wavelut(behavioral)
 # Loading work.wavelut_tb(behavioral)
-add wave -position end  sim:/pwm_gen_tb/clk
-add wave -position end  sim:/pwm_gen_tb/reset
-add wave -position end  sim:/pwm_gen_tb/pwm_out
-add wave -position end  sim:/pwm_gen_tb/btn0_in
-add wave -position end  sim:/pwm_gen_tb/btn1_in
+# ** Fatal: (vsim-3363) The array length (8) of VHDL port 'SSEG0' does not match the width (7) of its Verilog connection (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_golden_top/wave_mux_inst File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/DE1_SOC_golden_top.v Line: 260
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 14:30:50 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
+# Start time: 14:32:00 on Nov 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+add wave -position end  sim:/wave_mux_tb/clk
+add wave -position end  sim:/wave_mux_tb/reset
+add wave -position end  sim:/wave_mux_tb/btn0_in
+add wave -position end  sim:/wave_mux_tb/btn1_in
+add wave -position end  sim:/wave_mux_tb/sw0
+add wave -position end  sim:/wave_mux_tb/sw1
+add wave -position end  sim:/wave_mux_tb/wave_out
+add wave -position end  sim:/wave_mux_tb/LEDs
+add wave -position end  sim:/wave_mux_tb/SSEG0
+add wave -position end  sim:/wave_mux_tb/SSEG1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
-#           Attempting to use alternate WLF file "./wlftfvgmk7".
+#           Attempting to use alternate WLF file "./wlfthbwrkm".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfvgmk7
+#           Using alternate file: ./wlfthbwrkm
 run
-add wave -position end  sim:/button_incrementer/btn_in
+quit -sim
+# End time: 14:38:04 on Nov 26,2025, Elapsed time: 0:06:04
+# Errors: 0, Warnings: 20
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd failed with 2 errors.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 1 failed with 2 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.button_incrementer work.wavelut_tb
+# vsim -gui work.button_incrementer work.wavelut_tb 
+# Start time: 14:39:04 on Nov 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# Loading work.wavelut(behavioral)
+run
+quit -sim
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# End time: 14:39:36 on Nov 26,2025, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 3
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
+# Start time: 14:39:36 on Nov 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+add wave -position end  sim:/wave_mux_tb/clk
+add wave -position end  sim:/wave_mux_tb/reset
+add wave -position end  sim:/wave_mux_tb/btn0_in
+add wave -position end  sim:/wave_mux_tb/btn1_in
+add wave -position end  sim:/wave_mux_tb/sw0
+add wave -position end  sim:/wave_mux_tb/sw1
+add wave -position end  sim:/wave_mux_tb/wave_out
+add wave -position end  sim:/wave_mux_tb/LEDs
+add wave -position end  sim:/wave_mux_tb/SSEG0
+add wave -position end  sim:/wave_mux_tb/SSEG1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
+#           Attempting to use alternate WLF file "./wlft2013q6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2013q6
+run
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
 run
-# BKMARK_ERROR: Unknown client: .main_pane.source
-add wave -position end  sim:/button_incrementer/output
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint sim:/wave_mux_tb/sw0
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd failed with 3 errors.
+# Compile of tb_Wave_mux.vhd failed with 1 errors.
+# 8 compiles, 2 failed with 4 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd failed with 3 errors.
+# Compile of tb_Wave_mux.vhd failed with 1 errors.
+# 8 compiles, 2 failed with 4 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+run
 restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# End time: 14:51:24 on Nov 26,2025, Elapsed time: 0:11:48
+# Errors: 0, Warnings: 17
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
+# Start time: 14:51:24 on Nov 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+add wave -position end  sim:/wave_mux/clk
+add wave -position end  sim:/wave_mux/reset
+add wave -position end  sim:/wave_mux/btn0_in
+add wave -position end  sim:/wave_mux/btn1_in
+add wave -position end  sim:/wave_mux/sw0
+add wave -position end  sim:/wave_mux/sw1
+add wave -position end  sim:/wave_mux/LEDs
+add wave -position end  sim:/wave_mux/SSEG0
+add wave -position end  sim:/wave_mux/SSEG1
+add wave -position end  sim:/wave_mux/wave_out
+add wave -position end  sim:/wave_mux/state
+add wave -position end  sim:/wave_mux/sin_wave
+add wave -position end  sim:/wave_mux/pwm_wave
+add wave -position end  sim:/wave_mux/sseg_tens
+add wave -position end  sim:/wave_mux/sseg_ones
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
+#           Attempting to use alternate WLF file "./wlftg3c6qd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftg3c6qd
+add wave -position end  sim:/wave_mux_tb/clk
+add wave -position end  sim:/wave_mux_tb/reset
+add wave -position end  sim:/wave_mux_tb/btn0_in
+add wave -position end  sim:/wave_mux_tb/btn1_in
+add wave -position end  sim:/wave_mux_tb/sw0
+add wave -position end  sim:/wave_mux_tb/sw1
+add wave -position end  sim:/wave_mux_tb/wave_out
+add wave -position end  sim:/wave_mux_tb/LEDs
+add wave -position end  sim:/wave_mux_tb/SSEG0
+add wave -position end  sim:/wave_mux_tb/SSEG1
 run
-# End time: 13:02:43 on Nov 26,2025, Elapsed time: 0:04:22
-# Errors: 0, Warnings: 1
+# WARNING: No extended dataflow license exists
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd failed with 1 errors.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd failed with 1 errors.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+quit -sim
+# End time: 15:17:38 on Nov 26,2025, Elapsed time: 0:26:14
+# Errors: 0, Warnings: 21
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd failed with 1 errors.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd failed with 1 errors.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
+# Start time: 15:18:23 on Nov 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+add wave -position insertpoint  \
+sim:/wave_mux_tb/clk \
+sim:/wave_mux_tb/reset \
+sim:/wave_mux_tb/btn0_in \
+sim:/wave_mux_tb/btn1_in \
+sim:/wave_mux_tb/sw0 \
+sim:/wave_mux_tb/sw1 \
+sim:/wave_mux_tb/wave_out \
+sim:/wave_mux_tb/LEDs \
+sim:/wave_mux_tb/SSEG0 \
+sim:/wave_mux_tb/SSEG1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
+#           Attempting to use alternate WLF file "./wlftg56fgn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftg56fgn
+run
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd failed with 4 errors.
+# 8 compiles, 1 failed with 4 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd failed with 3 errors.
+# 8 compiles, 1 failed with 3 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# End time: 15:26:02 on Nov 26,2025, Elapsed time: 0:07:39
+# Errors: 0, Warnings: 27
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
+# Start time: 15:26:02 on Nov 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Error: (vsim-3060) Port 'sw1' not found in VHDL entity (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SOC_golden_top/wave_mux_inst File: C:/Users/lingu/Documents/school/school_work/3rd_Year/Embedded/VHDL_PROJECTS/FPGA_Function-Generator/DE1_SOC_golden_top.v Line: 260
+# Error loading design
+# End time: 15:26:03 on Nov 26,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of DE1_SOC_golden_top.v failed with 1 errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v failed with 1 errors.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
+# Start time: 15:31:00 on Nov 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+add wave -position insertpoint  \
+sim:/wave_mux_tb/clk \
+sim:/wave_mux_tb/reset \
+sim:/wave_mux_tb/btn0_in \
+sim:/wave_mux_tb/btn1_in \
+sim:/wave_mux_tb/sw0 \
+sim:/wave_mux_tb/sw1 \
+sim:/wave_mux_tb/wave_out \
+sim:/wave_mux_tb/LEDs \
+sim:/wave_mux_tb/SSEG0 \
+sim:/wave_mux_tb/SSEG1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
+#           Attempting to use alternate WLF file "./wlftd8nmhz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd8nmhz
+run
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# End time: 15:39:31 on Nov 26,2025, Elapsed time: 0:08:31
+# Errors: 0, Warnings: 17
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
+# Start time: 15:39:31 on Nov 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+add wave -position insertpoint  \
+sim:/wave_mux_tb/clk \
+sim:/wave_mux_tb/reset \
+sim:/wave_mux_tb/btn0_in \
+sim:/wave_mux_tb/btn1_in \
+sim:/wave_mux_tb/sw0 \
+sim:/wave_mux_tb/sw1 \
+sim:/wave_mux_tb/wave_out \
+sim:/wave_mux_tb/LEDs \
+sim:/wave_mux_tb/SSEG0 \
+sim:/wave_mux_tb/SSEG1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
+#           Attempting to use alternate WLF file "./wlft63v6s3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft63v6s3
+run
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+run
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# Warning in wave window restart: (vish-4014) No objects found matching '/wave_mux_tb/sw1'. 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+run
+run
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd failed with 1 errors.
+# Compile of tb_Wave_mux.vhd failed with 2 errors.
+# 8 compiles, 2 failed with 3 errors.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd failed with 1 errors.
+# 8 compiles, 1 failed with 1 error.
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.button_incrementer(behavioral)
+# Loading work.DE1_SOC_golden_top
+# Loading work.pwm_gen(behavioral)
+# Loading work.pwm_gen_tb(behavioral)
+# Loading work.wave_mux(behavioral)
+# Loading work.wave_mux_tb(behavioral)
+# Loading work.wavelut(behavioral)
+# Loading work.wavelut_tb(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG0(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /DE1_SOC_golden_top/wave_mux_inst/SSEG1(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG0(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+run

@@ -17,7 +17,7 @@ architecture Behavioral of Wave_mux_tb is
 		  signal sw0, sw1 :  	STD_LOGIC; 
 		  signal wave_out	:		STD_LOGIC_VECTOR(7 downto 0);
 		  signal LEDs	:	 std_logic_vector(2 downto 0);	
-		  signal SSEG0, SSEG1 :  std_logic_vector(7 downto 0);
+		  signal SSEG0, SSEG1 :  std_logic_vector(6 downto 0);
 		  -- state LEDS
  
 begin
@@ -32,7 +32,6 @@ begin
             btn1_in  => btn1_in,
 				LEDs	=> LEDs,
 				sw0 => sw0,
-				sw1 => sw1,
 				SSEG0	=> SSEG0,
 				SSEG1	=> SSEG1
         );
@@ -56,8 +55,9 @@ begin
     stim_proc : process
     begin
         -- Switches = pwm state
-		  sw0 <= '1';
-		  sw1 <= '0';
+	sw0 <= '1';
+
+
 		  
         -- global reset pulse
         reset <= '0';
@@ -104,8 +104,7 @@ begin
         wait for 3 us;
 		  
         -- Switches = wave state
-		  sw0 <= '0';
-		  sw1 <= '1';
+	sw0 <= '0';
 
         -- press BTN0 once (increase speed)
         btn0_in <= '0';
