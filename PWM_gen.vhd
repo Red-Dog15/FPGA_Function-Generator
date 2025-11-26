@@ -25,6 +25,7 @@ architecture Behavioral of PWM_gen is
 begin
 
 -- instantiate 2 instance of button incrementer, button plut (positive incrementer) & button minus (negative incrementer)
+
 	Btn_plus : entity work.Button_Incrementer -- buton plus instationation
 	
 		Generic map (
@@ -56,7 +57,7 @@ begin
 
 		);
 
-			
+		-- PWM process
     process(clk, reset)
     begin
 		  duty <= duty + plus_pulse + minus_pulse; -- increment duty cycle by pulses

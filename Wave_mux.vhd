@@ -11,18 +11,16 @@ entity Wave_mux is
 		btn0_in    :     in	STD_LOGIC;                   -- push button input (prefer active-high)
 		btn1_in    :     in	STD_LOGIC;                -- push button input (prefer active-high)
 		sw0, sw1 :  in	STD_LOGIC;                   -- switch to change between sin and square wave
-		LED0, LED1, LED3 : out std_logic;				-- state LEDS
-		SSEG0, SSEG1 : out std_logic_vector(7 downto 0); 				-- state LEDS
+		LEDs : out std_logic_vector(2 downto 0);		-- leds tied to 3 bit Standerd logic vector
+		SSEG0, SSEG1 : out std_logic_vector(7 downto 0); 			-- state LEDS
 
 		--output waves
-		pwm_wave	:	out	STD_LOGIC_VECTOR(7 downto 0);
-		sin_wave :	out	STD_LOGIC_VECTOR(7 downto 0)
-		
+		output	:	out	STD_LOGIC_VECTOR(7 downto 0)	
 	);
 	
 end Wave_mux;
 
-		
+		-- TIP FOR WORK: divide duty cycle by 10, implement the digit on left sseg, and always keep left on 0 cause Duty cycle implements by 10
 architecture Behavioral of Wave_mux is
 
 	-- Build an enumerated type for the state machine
@@ -30,6 +28,8 @@ architecture Behavioral of Wave_mux is
 
 	-- Register to hold the current state
 	signal state   : state_type;
+	signal sin_wave : STD_LOGIC_VECTOR(7 downto 0);
+	signal pwm_wave :	STD_LOGIC_VECTOR(7 downto 0);
 
 
 begin
@@ -63,45 +63,47 @@ begin
 		elsif (rising_edge(clk)) then
 			case state is -- state machine for wave multiplexer
 				when state_pwm=> -- describe pwm wave state condtions
-					if (sw0 = '0') & (sw1 = '1') then --checks for sw0 logic
+					if (sw0 = '0') and (sw1 = '1') then --checks for sw0 logic
 						state <= state_wave;
-					else if (sw0 = '1') & (sw1 = '1') then --checks for null state requirements
+					elsif (sw0 = '1') and (sw1 = '1') then --checks for null state requirements
 						state <= state_null;
 					else
 						state <= state_pwm;
 					end if;
 					
 				when state_wave=> -- describe sin wave state conditions
-					if (sw0 = '1') & (sw1 = '0') then --checks for sw0 logic
+					if (sw0 = '1') and (sw1 = '0') then --checks for sw0 logic
 						state <= state_pwm;
-					else if (sw0 = '1') & (sw1 = '1') then --checks for null state requirements
+					elsif (sw0 = '1') and (sw1 = '1') then --checks for null state requirements
 						state <= state_null;
 					else
 						state <= state_wave;
 					end if;
 					
 				when state_null =>  -- describe null state conditions (neither gate is open)
-					if (sw0 = '1') & (sw1 = '0') then --checks for sw0 logic
+					if (sw0 = '1') and (sw1 = '0') then --checks for sw0 logic
 						state <= state_pwm;
-					else if (sw0 = '0') & sw1 = '1') then --checks for null state requirements
+					elsif (sw0 = '0') and (sw1 = '1') then --checks for null state requirements
 						state <= state_wave;
 					else
 						state <= state_null;
 					end if;
-			end case
-			
+			end case;
+		end if;
+	end process;
 	-- State Descriptions
 	process (state)
 	begin
 		case state is
 			when state_pwm =>
-				output <= pwm_wave;
-				LED0, LED1, LED3 <= "1", "1," "0";
+				output <= pwm_wave; --set output wave based on state
+				LEDs <= "110"; --set leds based on state
 			when state_wave  =>
 				output <= sin_wave;
+				LEDs <= "101"; 
 			when state_null  =>
 				output <= "00000000";
-
+				LEDs <= "011; 
 		end case;
 	end process;
 
