@@ -76,7 +76,7 @@ begin
         wait for 21 ms; -- wait longer than 20 to activate debouncer
         btn0_in <= '1';
         wait for 200 ns;
-		  btn0_in <= '0';
+	btn0_in <= '0';
         wait for 21 ms;
         btn0_in <= '1';
         wait for 200 ns;
@@ -89,14 +89,7 @@ begin
     	  btn1_in <= '0';
         wait for 21 ms;
         btn1_in <= '1';
-        wait for 200 ns;       
-		  
-	    
-        -- global reset pulse
-        reset <= '0';
-        wait for 100 ns;
-        reset <= '1';
-        wait for 200 ns;
+        wait for 200 ns;      
         
         
 

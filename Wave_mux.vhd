@@ -23,7 +23,7 @@ end Wave_mux;
 architecture Behavioral of Wave_mux is
 
 	-- Build an enumerated type for the state machine
-	type state_type is (state_pwm, state_wave);
+	type state_type is (state_pwm, state_wave, state_reset);
 
 	-- Register to hold the current state
 	signal state   : state_type := state_wave;
@@ -58,7 +58,9 @@ begin
 	-- Logic to advance to the next state
 	process(clk, reset)
 	begin
-		if (rising_edge(clk)) then
+		if reset = '0' then
+			state <=  state_reset;
+		elsif rising_edge(clk) then
 			case state is -- state machine for wave multiplexer
 				when state_pwm=> -- describe pwm wave state condtions
 					if (sw0 = '0')  then --checks for sw0 logic
@@ -72,7 +74,13 @@ begin
 						state <= state_pwm;
 					else
 						state <= state_wave;
-					end if;					
+					end if;	
+				when state_reset=> -- describe sin wave state conditions
+					if reset = '1' then
+						state <= state_pwm;
+					else
+						state <= state_reset;
+					end if;
 			end case;
 		end if;
 	end process;
@@ -87,6 +95,9 @@ begin
 			when state_wave  =>
 				wave_out <= sin_wave;
 				LEDs <= "101"; 
+				
+			when state_reset  =>
+				LEDs <= "111"; 
 		end case;
 	end process;
 

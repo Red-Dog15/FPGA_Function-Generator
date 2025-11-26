@@ -84,8 +84,6 @@ begin
 			
 		
 	begin 
-		-- adjust for button presses
-		max_count <= max_count + plus_pulse + minus_pulse;
 		
 		if rising_edge(clk)	then
 			case	current_state	is
@@ -109,6 +107,10 @@ begin
 						current_state <= HOLD;
 					end if;
 			end case;
+		elsif rising_edge(clk) then
+			-- adjust for button presses
+			max_count <= max_count + plus_pulse + minus_pulse;
+		
 		end if;	
 	end process;
 end Behavioral;	

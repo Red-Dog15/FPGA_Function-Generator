@@ -60,7 +60,6 @@ begin
 		-- PWM process
     process(clk, reset)
     begin
-		  duty <= duty + plus_pulse + minus_pulse; -- increment duty cycle by pulses
         if reset = '0' then
             cnt <= 0;
             pwm_out <= "00000000";
@@ -77,6 +76,11 @@ begin
             else
                 pwm_out <= "00000000";
             end if;
+				
+			elsif rising_edge(clk) then
+			
+				duty <= duty + plus_pulse + minus_pulse; -- increment duty cycle by pulses
+				
         end if;
     end process;
 
