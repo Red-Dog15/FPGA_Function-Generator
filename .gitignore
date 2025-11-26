@@ -15,10 +15,11 @@ simulation/
 modelsim.ini
 transcript
 work/
-*. 
+ 
 
 # backup files
 *.bak
 
+# keep vhdl testbenches
 !Simulation/*.vhd
 !Simulation/*.vhdl
