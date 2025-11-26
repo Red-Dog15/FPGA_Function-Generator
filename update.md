@@ -41,3 +41,15 @@ Fix: <br />
 * After Button0 debouncer time: ( here the button increments twice as the testbench suggests)  <br />
 &nbsp; &nbsp; &nbsp; &nbsp;<img width="320" height="709" alt="image" src="https://github.com/user-attachments/assets/22c3942f-911a-445d-b066-8b1bca49bd40" />
 
+**UPDATE 1.2: Wave Multiplexer** <br /> <br />
+
+Problem : <br />
+* Multiplexer wave stuck on static value, not continuously changing as it should
+
+Fix: <br />  
+
+* changed the sensitivity list of the state machine to handle component output wave parameters. Now it can see the values changing
+&nbsp; &nbsp; &nbsp; &nbsp;  <img width="523" height="128" alt="image" src="https://github.com/user-attachments/assets/a3a661e0-0744-4a35-9259-07c9b56d0bde" />
+
+
+
