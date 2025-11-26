@@ -20,7 +20,6 @@ entity Wave_mux is
 	
 end Wave_mux;
 
-		-- TIP FOR WORK: divide duty cycle by 10, implement the digit on left sseg, and always keep left on 0 cause Duty cycle implements by 10
 architecture Behavioral of Wave_mux is
 
 	-- Build an enumerated type for the state machine
@@ -88,6 +87,10 @@ begin
 					else
 						state <= state_null;
 					end if;
+					
+					-- Duty cycle arithmatic for sseg
+					-- TIP FOR WORK: divide duty cycle by 10, implement the digit on left sseg, and always keep left on 0 cause Duty cycle implements by 10
+
 			end case;
 		end if;
 	end process;
@@ -98,12 +101,13 @@ begin
 			when state_pwm =>
 				output <= pwm_wave; --set output wave based on state
 				LEDs <= "110"; --set leds based on state
+
 			when state_wave  =>
 				output <= sin_wave;
 				LEDs <= "101"; 
 			when state_null  =>
 				output <= "00000000";
-				LEDs <= "011; 
+				LEDs <= "011"; 
 		end case;
 	end process;
 
