@@ -85,7 +85,7 @@ begin
 		end if;
 	end process;
 	-- State Descriptions
-	process (state)
+	process (state, sin_wave, pwm_wave) -- allow process to pickup output changes
 	begin
 		case state is
 			when state_pwm =>

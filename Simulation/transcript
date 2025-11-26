@@ -1,6 +1,15 @@
+# Compile of DE1_SOC_golden_top.v was successful.
+# Compile of tb_waveLUT.vhd was successful.
+# Compile of Button_Incrementer.vhd was successful.
+# Compile of waveLUT.vhd was successful.
+# Compile of tb_PWM_gen.vhd was successful.
+# Compile of PWM_gen.vhd was successful.
+# Compile of Wave_mux.vhd was successful.
+# Compile of tb_Wave_mux.vhd was successful.
+# 8 compiles, 0 failed with no errors.
 vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
 # vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
-# Start time: 16:37:58 on Nov 26,2025
+# Start time: 16:53:09 on Nov 26,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -45,31 +54,27 @@ vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_
 # This port will contribute value (UUUUUUU) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /wave_mux_tb/dut/SSEG1(6 downto 0) has no driver.
 # This port will contribute value (UUUUUUU) to the signal network.
-quit -sim
-# End time: 16:38:14 on Nov 26,2025, Elapsed time: 0:00:16
-# Errors: 0, Warnings: 17
-# Compile of DE1_SOC_golden_top.v was successful.
-# Compile of tb_waveLUT.vhd was successful.
-# Compile of Button_Incrementer.vhd was successful.
-# Compile of waveLUT.vhd was successful.
-# Compile of tb_PWM_gen.vhd was successful.
-# Compile of PWM_gen.vhd was successful.
-# Compile of Wave_mux.vhd was successful.
-# Compile of tb_Wave_mux.vhd failed with 1 errors.
-# 8 compiles, 1 failed with 1 error.
-# Load canceled
-# Compile of DE1_SOC_golden_top.v was successful.
-# Compile of tb_waveLUT.vhd was successful.
-# Compile of Button_Incrementer.vhd was successful.
-# Compile of waveLUT.vhd was successful.
-# Compile of tb_PWM_gen.vhd was successful.
-# Compile of PWM_gen.vhd was successful.
-# Compile of Wave_mux.vhd was successful.
-# Compile of tb_Wave_mux.vhd was successful.
-# 8 compiles, 0 failed with no errors.
+run
+add wave -position end  sim:/wave_mux_tb/clk
+add wave -position end  sim:/wave_mux_tb/reset
+add wave -position end  sim:/wave_mux_tb/btn0_in
+add wave -position end  sim:/wave_mux_tb/btn1_in
+add wave -position end  sim:/wave_mux_tb/sw0
+add wave -position end  sim:/wave_mux_tb/sw1
+add wave -position end  sim:/wave_mux_tb/wave_out
+add wave -position end  sim:/wave_mux_tb/LEDs
+add wave -position end  sim:/wave_mux_tb/SSEG0
+add wave -position end  sim:/wave_mux_tb/SSEG1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
+#           Attempting to use alternate WLF file "./wlftw0n4sm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw0n4sm
 vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb
+# End time: 16:54:15 on Nov 26,2025, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 20
 # vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wave_mux_tb work.wavelut work.wavelut_tb 
-# Start time: 16:40:43 on Nov 26,2025
+# Start time: 16:54:15 on Nov 26,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -127,7 +132,7 @@ sim:/wave_mux_tb/SSEG0 \
 sim:/wave_mux_tb/SSEG1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
-#           Attempting to use alternate WLF file "./wlftid4n4r".
+#           Attempting to use alternate WLF file "./wlft6dsid2".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftid4n4r
+#           Using alternate file: ./wlft6dsid2
 run
