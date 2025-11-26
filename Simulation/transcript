@@ -1,12 +1,7 @@
-# Compile of DE1_SOC_golden_top.v was successful.
-# Compile of tb_waveLUT.vhd was successful.
-# Compile of Button_Incrementer.vhd was successful.
-# Compile of waveLUT.vhd was successful.
-# Compile of tb_PWM_gen.vhd was successful.
-# Compile of PWM_gen.vhd was successful.
-vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wavelut work.wavelut_tb
-# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wave_mux work.wavelut work.wavelut_tb 
-# Start time: 22:00:31 on Nov 25,2025
+# Load canceled
+vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wavelut work.wavelut_tb
+# vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_gen_tb work.wavelut work.wavelut_tb 
+# Start time: 12:58:21 on Nov 26,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -15,34 +10,26 @@ vsim -gui work.button_incrementer work.DE1_SOC_golden_top work.pwm_gen work.pwm_
 # Loading work.DE1_SOC_golden_top
 # Loading work.pwm_gen(behavioral)
 # Loading work.pwm_gen_tb(behavioral)
-# Loading work.wave_mux(behavioral)
 # Loading work.wavelut(behavioral)
 # Loading work.wavelut_tb(behavioral)
-# Compile of Wave_mux.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-add wave -position insertpoint  \
-sim:/pwm_gen_tb/clk \
-sim:/pwm_gen_tb/reset \
-sim:/pwm_gen_tb/pwm_out \
-sim:/pwm_gen_tb/btn0_in \
-sim:/pwm_gen_tb/btn1_in
+add wave -position end  sim:/pwm_gen_tb/clk
+add wave -position end  sim:/pwm_gen_tb/reset
+add wave -position end  sim:/pwm_gen_tb/pwm_out
+add wave -position end  sim:/pwm_gen_tb/btn0_in
+add wave -position end  sim:/pwm_gen_tb/btn1_in
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: lingu  Hostname: TARDIGRADE  ProcessID: 34860
-#           Attempting to use alternate WLF file "./wlfthwnrf9".
+#           Attempting to use alternate WLF file "./wlftfvgmk7".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfthwnrf9
+#           Using alternate file: ./wlftfvgmk7
 run
-add wave -position end  sim:/wave_mux/pwm_wave
+add wave -position end  sim:/button_incrementer/btn_in
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Compile of DE1_SOC_golden_top.v was successful.
-# Compile of tb_waveLUT.vhd was successful.
-# Compile of Button_Incrementer.vhd was successful.
-# Compile of waveLUT.vhd was successful.
-# Compile of tb_PWM_gen.vhd was successful.
-# Compile of PWM_gen.vhd was successful.
-# Compile of Wave_mux.vhd was successful.
-# 7 compiles, 0 failed with no errors.
 run
-# End time: 23:39:03 on Nov 25,2025, Elapsed time: 1:38:32
-# Errors: 0, Warnings: 2
+# BKMARK_ERROR: Unknown client: .main_pane.source
+add wave -position end  sim:/button_incrementer/output
+restart -f
+run
+# End time: 13:02:43 on Nov 26,2025, Elapsed time: 0:04:22
+# Errors: 0, Warnings: 1

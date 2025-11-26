@@ -14,8 +14,8 @@ entity Wave_mux is
 		LEDs : out std_logic_vector(2 downto 0);		-- leds tied to 3 bit Standerd logic vector
 		SSEG0, SSEG1 : out std_logic_vector(7 downto 0); 			-- state LEDS
 
-		--output waves
-		output	:	out	STD_LOGIC_VECTOR(7 downto 0)	
+		--wave_out waves
+		wave_out	:	out	STD_LOGIC_VECTOR(7 downto 0)	
 	);
 	
 end Wave_mux;
@@ -90,10 +90,6 @@ begin
 					end if;
 					
 					-- Duty cycle arithmatic for sseg
-					
-					sseg_tens_dec <= (duty + 1) / 10;
-					sseg_ones_dec <= (duty + 1) % 10
-					
 
 
 					-- TIP FOR WORK: divide duty cycle by 10, implement the digit on left sseg, and always keep left on 0 cause Duty cycle implements by 10
@@ -106,14 +102,14 @@ begin
 	begin
 		case state is
 			when state_pwm =>
-				output <= pwm_wave; --set output wave based on state
+				wave_out <= pwm_wave; --set wave_out wave based on state
 				LEDs <= "110"; --set leds based on state
 
 			when state_wave  =>
-				output <= sin_wave;
+				wave_out <= sin_wave;
 				LEDs <= "101"; 
 			when state_null  =>
-				output <= "00000000";
+				wave_out <= "00000000";
 				LEDs <= "011"; 
 		end case;
 	end process;
