@@ -29,7 +29,8 @@ architecture Behavioral of Wave_mux is
 	signal state   : state_type;
 	signal sin_wave : STD_LOGIC_VECTOR(7 downto 0);
 	signal pwm_wave :	STD_LOGIC_VECTOR(7 downto 0);
-
+	signal sseg_tens : Integer range 0 to 9 := 0;
+	signal sseg_ones : Integer range 0 to 9 := 0;
 
 begin
 	
@@ -89,8 +90,14 @@ begin
 					end if;
 					
 					-- Duty cycle arithmatic for sseg
-					-- TIP FOR WORK: divide duty cycle by 10, implement the digit on left sseg, and always keep left on 0 cause Duty cycle implements by 10
+					
+					sseg_tens_dec <= (duty + 1) / 10;
+					sseg_ones_dec <= (duty + 1) % 10
+					
 
+
+					-- TIP FOR WORK: divide duty cycle by 10, implement the digit on left sseg, and always keep left on 0 cause Duty cycle implements by 10
+					
 			end case;
 		end if;
 	end process;
