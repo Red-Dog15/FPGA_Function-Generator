@@ -19,3 +19,6 @@ work/
 
 # backup files
 *.bak
+
+!Simulation/*.vhd
+!Simulation/*.vhdl
