@@ -8,18 +8,17 @@ output_files/
 *.log
 *.flock
 
-# ModelSim/Questa project files
-simulation/
+# ModelSim/Questa unwanted project files
+Simulation/*
 *.mpf
 *.mpp
 modelsim.ini
 transcript
 work/
- 
+
+# KEEP VHDL testbenches inside Simulation (IMPORTANT)
+!Simulation/*.vhd
+!Simulation/*.vhdl
 
 # backup files
 *.bak
-
-# keep vhdl testbenches
-!Simulation/*.vhd
-!Simulation/*.vhdl
