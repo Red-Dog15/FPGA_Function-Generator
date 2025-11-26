@@ -11,8 +11,8 @@ entity Wave_mux is
 		btn0_in    :     in	STD_LOGIC;                   -- push button input (prefer active-high)
 		btn1_in    :     in	STD_LOGIC;                -- push button input (prefer active-high)
 		sw0, sw1 :  in	STD_LOGIC;                   -- switch to change between sin and square wave
-		LED0, LED1, LED3 : in std_logic;				-- state LEDS
-		SSEG0, SSEG1 : in std_logic_vector(7 downto 0); 				-- state LEDS
+		LED0, LED1, LED3 : out std_logic;				-- state LEDS
+		SSEG0, SSEG1 : out std_logic_vector(7 downto 0); 				-- state LEDS
 
 		--output waves
 		pwm_wave	:	out	STD_LOGIC_VECTOR(7 downto 0);
@@ -96,6 +96,7 @@ begin
 		case state is
 			when state_pwm =>
 				output <= pwm_wave;
+				LED0, LED1, LED3 <= "1", "1," "0";
 			when state_wave  =>
 				output <= sin_wave;
 			when state_null  =>
