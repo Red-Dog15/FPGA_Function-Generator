@@ -11,7 +11,7 @@ entity PWM_gen is
         pwm_out    : out STD_LOGIC_VECTOR(7 DOWNTO 0);
 		  btn0_in	:  in std_logic;
 		  btn1_in  :	in std_logic;
-		  duty_binary  : out  std_logic_vector(15 downto 0) := "000000000000"
+		  duty_binary  : out  unsigned(11 downto 0) := "000000000000"
 		
     );
 	 
@@ -23,6 +23,7 @@ architecture Behavioral of PWM_gen is
 	 signal plus_pulse    : integer := 0; -- hold incrementer states
     signal minus_pulse   : integer := 0;
 	 constant duty_incrementer   : integer := 10; -- how much each button press changes the duty cycle
+	 signal duty  : integer range 0 to 100 := 50;   -- duty % cycle
 
 begin
 
@@ -68,7 +69,7 @@ begin
         elsif rising_edge(clk) then
             
 				duty <= duty + plus_pulse + minus_pulse; -- increment duty cycle by pulses
-            duty_binary <= std_logic_vector(to_unsigned(duty, 16)); --implement binary duty cycle
+            duty_binary <= to_unsigned(duty, 12); --implement binary duty cycle
 				
             if cnt = 99 then --reset 
                 cnt <= 0;

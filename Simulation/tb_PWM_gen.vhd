@@ -13,10 +13,9 @@ architecture Behavioral of PWM_gen_tb is
         signal pwm_out    : STD_LOGIC_VECTOR(7 DOWNTO 0);
 		  signal btn0_in	:  STD_LOGIC := '1';
 		  signal btn1_in  :	 STD_LOGIC := '1';
+		  signal dummy_duty   : unsigned(11 downto 0);  -- dummy variable for instantiation
 
 begin
-
-	 signal dummy_duty   : std_logic_vector(15 downto 0);  -- added
 
     -- instantiate DUT
     dut : entity work.PWM_gen
@@ -26,9 +25,8 @@ begin
             reset    => reset,
             btn0_in  => btn0_in,
             btn1_in  => btn1_in,
-				duty_binary  => dummy_duty,
-
-        );
+				duty_binary  => dummy_duty
+			);
 
 	
         -- clock generation (20 ns period = 50 MHz)

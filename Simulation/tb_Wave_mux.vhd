@@ -17,7 +17,7 @@ architecture Behavioral of Wave_mux_tb is
 		  signal sw0, sw1 :  	STD_LOGIC; 
 		  signal wave_out	:		STD_LOGIC_VECTOR(7 downto 0);
 		  signal LEDs	:	 std_logic_vector(2 downto 0);	
-		  signal SSEG0, SSEG1 :  std_logic_vector(6 downto 0);
+		  signal SSEG0, SSEG1 :  std_logic_vector(7 downto 0);
 		  -- state LEDS
  
 begin

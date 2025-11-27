@@ -2,6 +2,8 @@
 library IEEE;
 use IEEE.STD_Logic_1164.ALL;
 Use IEEE.NUMERIC_STD.ALL; 
+use work.ssegPackage.all;
+
 
 entity Wave_mux is
 
@@ -12,7 +14,7 @@ entity Wave_mux is
 		btn1_in    :     in	STD_LOGIC;                -- push button input (prefer active-high)
 		sw0 :  in	STD_LOGIC;                   -- switch to change between sin and square wave
 		LEDs : out std_logic_vector(2 downto 0);		-- leds tied to 3 bit Standerd logic vector
-		SSEG0, SSEG1 : out std_logic_vector(6 downto 0); 			-- state LEDS
+		sseg0, sseg1 : out std_logic_vector(7 downto 0); 			-- state LEDS
 
 		--wave_out waves
 		wave_out	:	out	STD_LOGIC_VECTOR(7 downto 0)	
@@ -31,7 +33,7 @@ architecture Behavioral of Wave_mux is
 	signal sin_wave : STD_LOGIC_VECTOR(7 downto 0);
 	signal pwm_wave :	STD_LOGIC_VECTOR(7 downto 0);
 	signal bcd : std_logic_vector(15 downto 0); --register to hold bcd
-   signal duty_binary : std_logic_vector(15 downto 0); -- register to hold duty cycle binary
+   signal duty_binary : unsigned(11 downto 0); -- register to hold duty cycle binary
 	
 begin
 
@@ -42,7 +44,7 @@ begin
 		 reset => reset,
 		 pwm_out => pwm_wave,
 		 btn0_in	=> btn0_in,
-		 btn1_in => btn1_in
+		 btn1_in => btn1_in,
 		 duty_binary	=> duty_binary
 	);
 
@@ -61,7 +63,7 @@ begin
     threeDigit : doubleDabble
         port map (
             clk => clk,
-            binaryIn => duty_binary
+            binaryIn => duty_binary,
             bcd => bcd
         );
 
