@@ -265,7 +265,7 @@ Wave_mux wave_mux_inst (
     .sw0      (SW[0]),		// link switches 
     .LEDs     (LEDR[2:0]),			// link led displays
     .SSEG0    (HEX0[6:0]),      // link sseg displays
-    .SSEG1    (HEX0[6:0]),      
+    .SSEG1    (HEX1[6:0]),      
     .wave_out  (GPIO_1[7:0])
 );
 

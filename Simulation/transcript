@@ -136,3 +136,5 @@ sim:/wave_mux_tb/SSEG1
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 #           Using alternate file: ./wlft6dsid2
 run
+# End time: 19:08:19 on Nov 26,2025, Elapsed time: 2:14:04
+# Errors: 0, Warnings: 20

@@ -27,11 +27,12 @@ architecture Behavioral of Wave_mux is
 
 	-- Register to hold the current state
 	signal state   : state_type := state_wave;
+	
 	signal sin_wave : STD_LOGIC_VECTOR(7 downto 0);
 	signal pwm_wave :	STD_LOGIC_VECTOR(7 downto 0);
-	signal sseg_tens : Integer range 0 to 9 := 0;
-	signal sseg_ones : Integer range 0 to 9 := 0;
-
+	signal bcd : std_logic_vector(15 downto 0); --register to hold bcd
+   signal duty_binary : std_logic_vector(15 downto 0); -- register to hold duty cycle binary
+	
 begin
 
 	-- instantiate PWM wave
@@ -42,6 +43,7 @@ begin
 		 pwm_out => pwm_wave,
 		 btn0_in	=> btn0_in,
 		 btn1_in => btn1_in
+		 duty_binary	=> duty_binary
 	);
 
 	-- instantiate SIN wave
@@ -55,6 +57,17 @@ begin
 		 wave_out => sin_wave
 	);
 
+	
+    threeDigit : doubleDabble
+        port map (
+            clk => clk,
+            binaryIn => duty_binary
+            bcd => bcd
+        );
+
+    ssegOnes  : ssegDecoder port map (binaryIn => bcd(3 downto 0), ssegOut => sseg0);
+    ssegTens  : ssegDecoder port map (binaryIn => bcd(7 downto 4), ssegOut => sseg1);
+	 
 	-- Logic to advance to the next state
 	process(clk, reset)
 	begin

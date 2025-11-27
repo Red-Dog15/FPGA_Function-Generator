@@ -16,6 +16,8 @@ architecture Behavioral of PWM_gen_tb is
 
 begin
 
+	 signal dummy_duty   : std_logic_vector(15 downto 0);  -- added
+
     -- instantiate DUT
     dut : entity work.PWM_gen
         port map (
@@ -23,7 +25,9 @@ begin
             pwm_out => pwm_out,
             reset    => reset,
             btn0_in  => btn0_in,
-            btn1_in  => btn1_in
+            btn1_in  => btn1_in,
+				duty_binary  => dummy_duty,
+
         );
 
 	

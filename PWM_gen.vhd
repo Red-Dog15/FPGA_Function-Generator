@@ -4,19 +4,21 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity PWM_gen is
 
+
     Port(
         clk        : in std_logic;
         reset      : in std_logic;
         pwm_out    : out STD_LOGIC_VECTOR(7 DOWNTO 0);
 		  btn0_in	:  in std_logic;
-		  btn1_in  :	in std_logic
+		  btn1_in  :	in std_logic;
+		  duty_binary  : out  std_logic_vector(15 downto 0) := "000000000000"
+		
     );
 	 
 end PWM_gen;
 
 architecture Behavioral of PWM_gen is
     -- initiate signals
-	 signal duty  : integer range 0 to 100 := 50;   -- duty % cycle
     signal cnt : integer range 0 to 99 := 0;
 	 signal plus_pulse    : integer := 0; -- hold incrementer states
     signal minus_pulse   : integer := 0;
@@ -65,6 +67,9 @@ begin
             pwm_out <= "00000000";
         elsif rising_edge(clk) then
             
+				duty <= duty + plus_pulse + minus_pulse; -- increment duty cycle by pulses
+            duty_binary <= std_logic_vector(to_unsigned(duty, 16)); --implement binary duty cycle
+				
             if cnt = 99 then --reset 
                 cnt <= 0;
             else 
@@ -76,11 +81,7 @@ begin
             else
                 pwm_out <= "00000000";
             end if;
-				
-			elsif rising_edge(clk) then
-			
-				duty <= duty + plus_pulse + minus_pulse; -- increment duty cycle by pulses
-				
+
         end if;
     end process;
 
