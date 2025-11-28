@@ -1,29 +1,32 @@
---	Test Bench for Wavelut
+--	Test Bench for PWM Generator
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity waveLUT_tb is
-end waveLUT_tb;
+entity PWM_gen_tb is
+end PWM_gen_tb;
 
-architecture Behavioral of waveLUT_tb is
-	signal clk	:	STD_LOGIC	:=	'0';
-	signal wave_out	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
-	signal reset    : STD_LOGIC := '1';
-   signal btn0_in  : STD_LOGIC := '1';
-   signal btn1_in  : STD_LOGIC := '1';
+architecture Behavioral of PWM_gen_tb is
+        signal clk        :  STD_LOGIC	:=	'0';
+        signal reset      : STD_LOGIC := '1';
+        signal pwm_out    : STD_LOGIC_VECTOR(7 DOWNTO 0);
+		  signal btn0_in	:  STD_LOGIC := '1';
+		  signal btn1_in  :	 STD_LOGIC := '1';
+		  signal dummy_duty   : unsigned(11 downto 0);  -- dummy variable for instantiation
 
 begin
+
     -- instantiate DUT
-    dut : entity work.waveLUT
+    dut : entity work.PWM_gen
         port map (
             clk      => clk,
-            wave_out => wave_out,
+            pwm_out => pwm_out,
             reset    => reset,
             btn0_in  => btn0_in,
-            btn1_in  => btn1_in
-        );
+            btn1_in  => btn1_in,
+				duty_binary  => dummy_duty
+			);
 
 	
         -- clock generation (20 ns period = 50 MHz)

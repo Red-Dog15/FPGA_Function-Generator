@@ -34,10 +34,10 @@ architecture Behavioral of waveLUT is
 	
 	type state_type is (UPDATE_VALUE, HOLD);
 	signal current_state	:	state_type	:=	UPDATE_VALUE;
-	signal max_count : INTEGER range -100 to 100 := 2;
+	signal max_count : INTEGER range 0 to 100 := 2;
 	
-	signal plus_pulse    : integer := 1; -- hold incrementer states
-   signal minus_pulse   : integer := 1;
+	signal plus_pulse    : integer := 0; -- hold incrementer outputs
+   signal minus_pulse   : integer := 0;
 	
 begin
 
@@ -47,7 +47,9 @@ begin
 	Btn_plus : entity work.Button_Incrementer -- buton plus instationation
 	
 		Generic map (
-				btn_val	 =>	  10    -- set count incrementation to 1
+        	CLK_FREQ_HZ => 50000000,
+        	DEBOUNCE_MS => 20,
+			btn_val	 =>	  10    -- set count incrementation to 1
 		)
 		port map (
 			clk     =>      clk,                          -- system clock
@@ -60,7 +62,9 @@ begin
 	Btn_minus : entity work.Button_Incrementer -- buton minus instationation
 		
 		Generic map (
-				btn_val	 =>	  -10    -- set count incrementation to 1
+        		CLK_FREQ_HZ => 50000000,
+        		DEBOUNCE_MS => 20,
+			btn_val	 =>	  -10    -- set count incrementation to 1
 		)
 		port map (
 		
@@ -76,12 +80,10 @@ begin
 		
 	process(clk)
 		variable i : INTEGER range 0 to 31 := 0;
-		variable count: integer range 0 to 2 := 0;
+		variable count: INTEGER range 0 to 100 := 0;
 			
 		
 	begin 
-		-- adjust for button presses
-		max_count <= max_count + plus_pulse + minus_pulse;
 		
 		if rising_edge(clk)	then
 			case	current_state	is
@@ -105,6 +107,10 @@ begin
 						current_state <= HOLD;
 					end if;
 			end case;
+		elsif rising_edge(clk) then
+			-- adjust for button presses
+			max_count <= max_count + plus_pulse + minus_pulse;
+		
 		end if;	
 	end process;
 end Behavioral;	

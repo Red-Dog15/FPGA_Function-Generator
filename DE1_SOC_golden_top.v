@@ -250,7 +250,24 @@ module DE1_SOC_golden_top(
 //  REG/WIRE declarations
 //=======================================================
 
+// Wave_mux integration
 
+// internal wires
+wire [7:0] wave_out_bus;
+wire [2:0] wave_leds;
+
+// VHDL block instantiation
+Wave_mux wave_mux_inst (
+    .clk      (CLOCK_50), //link clock 
+    .btn0_in  (KEY[0]),		//link buttons 
+    .btn1_in  (KEY[1]),
+	 .reset    (KEY[3]),	
+    .sw0      (SW[0]),		// link switches 
+    .LEDs     (LEDR[2:0]),			// link led displays
+    .SSEG0    (HEX0[6:0]),      // link sseg displays
+    .SSEG1    (HEX1[6:0]),      
+    .wave_out  (GPIO_1[7:0])
+);
 
 
 

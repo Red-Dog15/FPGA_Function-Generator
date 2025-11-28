@@ -12,7 +12,7 @@ entity Button_Incrementer is
 	
 		CLK_FREQ_HZ : integer := 50000000; -- system clock frequency (Hz)
 		DEBOUNCE_MS : integer := 20;       -- debounce time (ms)
-		btn_val	:	integer := 0 -- increments button depending on button val given
+		btn_val	:	integer   := 	0     -- increments button depending on button val given
 	);
 
 	port (
@@ -42,10 +42,10 @@ begin
 	process(clk, reset)
 	begin
 		if reset = '0' then
-			sync0     <= '0';
-			sync1     <= '0';
-			stable    <= '0';
-			prev_stab <= '0';
+			sync0     <= '1';
+			sync1     <= '1';
+			stable    <= '1';
+			prev_stab <= '1';
 			db_cnt    <= 0; -- max_counter for debouncer
 
 		elsif rising_edge(clk) then
@@ -53,9 +53,9 @@ begin
 			sync0 <= btn_in;
 			sync1 <= sync0;
 
-			-- debouncer checks if value saved changed over duration of 20 ms (db_cnt)
+			-- debouncer checks if value shave changed over duration of 20 ms (db_cnt)
 			if sync1 /= stable then
-				if db_cnt < db_time then
+				if db_cnt < db_time then 
 					db_cnt <= db_cnt + 1;
 				else
 					stable <= sync1;
@@ -66,7 +66,7 @@ begin
 			end if;
 
 			-- checks for duplicate stable signals to avoid Duty Cycle overcorrecting
-			if stable = '1' and prev_stab = '0' then
+			if stable = '0' and prev_stab = '1' then
 				output <= btn_val;
 			else 
 				output <= 0; 
