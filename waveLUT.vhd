@@ -34,7 +34,7 @@ architecture Behavioral of waveLUT is
 	
 	type state_type is (UPDATE_VALUE, HOLD);
 	signal current_state	:	state_type	:=	UPDATE_VALUE;
-	signal max_count : INTEGER range 0 to 100 := 2;
+	signal max_count : INTEGER range 0 to 200000 := 20;
 	
 	signal plus_pulse    : integer := 0; -- hold incrementer outputs
    signal minus_pulse   : integer := 0;
@@ -49,7 +49,7 @@ begin
 		Generic map (
         	CLK_FREQ_HZ => 50000000,
         	DEBOUNCE_MS => 20,
-			btn_val	 =>	  10    -- set count incrementation to 1
+			btn_val	 =>	  1000    -- set count incrementation to 1
 		)
 		port map (
 			clk     =>      clk,                          -- system clock
@@ -64,7 +64,7 @@ begin
 		Generic map (
         		CLK_FREQ_HZ => 50000000,
         		DEBOUNCE_MS => 20,
-			btn_val	 =>	  -10    -- set count incrementation to 1
+			btn_val	 =>	  -1000    -- set count incrementation to 1
 		)
 		port map (
 		
@@ -80,12 +80,24 @@ begin
 		
 	process(clk)
 		variable i : INTEGER range 0 to 31 := 0;
-		variable count: INTEGER range 0 to 100 := 0;
+		variable count : INTEGER range 0 to 200000 := 0;
+		--variable frequency : INTEGER range 20 to 100000 := (500000000 / (32 * max_count));
 			
-		
 	begin 
 		
 		if rising_edge(clk)	then
+		
+		 -- Adjust max_count based on button pulses
+        max_count <= max_count + plus_pulse + minus_pulse;
+
+        -- Clamp max_count to valid range
+        if max_count < 156 then
+            max_count <= 156;
+        elsif max_count > 156250 then
+            max_count <= 156250;
+        end if;
+		  
+
 			case	current_state	is
 				when	UPDATE_VALUE => 
 					wave_out <=	wave(i);
@@ -107,7 +119,6 @@ begin
 						current_state <= HOLD;
 					end if;
 			end case;
-		elsif rising_edge(clk) then
 			-- adjust for button presses
 			max_count <= max_count + plus_pulse + minus_pulse;
 		
