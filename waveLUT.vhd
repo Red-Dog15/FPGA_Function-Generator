@@ -90,7 +90,7 @@ begin
 		 -- Adjust max_count based on button pulses
         max_count <= max_count + plus_pulse + minus_pulse;
 
-        -- Clamp max_count to valid range
+        -- keep max_count to valid range
         if max_count < 156 then
             max_count <= 156;
         elsif max_count > 156250 then
